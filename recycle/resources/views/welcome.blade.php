@@ -105,50 +105,51 @@ within the hour with .and enjoy a clean environment and clean House we save you 
         <h3>Recycling Gallery </h3></br></br>
           <div class="content-img">
 
-          <div class="img1" style="display: inline">  <a href=steal.html>
+          <div class="img1" style="display: inline">  <a href="/recycling gallery/steal">
          <img src="images/jpg/Capture5.jpg" alt="paper"   style="width:15%;height: 25% "></a></div>
          
           
         
-          <div class="img2" style="display: inline"> <a href=glass.html>
+          <div class="img2" style="display: inline"> <a href="/recycling gallery/glass">
           <img src="images/jpg/Capture1.jpg" alt="paper" style="width:30%;height: 25% "></a>
         
           </div>
          
-          <div class="img3" style="display: inline"> <a href="plastic.html">
+          <div class="img3" style="display: inline"> <a href="/recycling gallery/plastic">
           <img src="images/jpg/Capture9.jpg" alt="paper" style="width:30%;height: 25%"></a></div>
            
         
-               <div class="img4" style="display: inline"> <a href=aluminum.html>
+               <div class="img4" style="display: inline"> <a href="/recycling gallery/aluminum">
            <img src="images/jpg/alu.jpg" alt="paper"
                 style="width:15%;height: 25% "></a>
            </div>
         
 </br>
 
-          <div class="img5"style="display: inline"><a href="plastic_bages.html">
+          <div class="img5"style="display: inline"><a href="/recycling gallery/plastic_bages">
           <img src="images/jpg/Capture4.jpg" alt="paper" class="img1" style="width:15%;height: 60% ;margin-top: 10px"></a></div>
          
            
-              <div class="img6" style="display: inline" class="content-img"> <a href=paper.html>
+              <div class="img6" style="display: inline" class="content-img"> <a href="/recycling gallery/paper">
         <img src="images/jpg/Capturej.jpg" alt="paper" class="img1"  style="width:30%;height: 25% ;margin-top: -170px" ></a>
         
         </div>
          
-        <div class="img7" style="display: inline"> <a href=cartons.html>
+        <div class="img7" style="display: inline"> <a href="/recycling gallery/cartons">
              <img src="images/jpg/Capture8.jpg" alt="paper"  style="width:30%;height: 27% ;margin-top: -170px"></a></div>
            
-           <div class="img8" style="display: inline"> <a href="electronics.html">
+           <div class="img8" style="display: inline"> <a href="/recycling gallery/electronics">
            <img src="images/jpg/Capture7 (1).jpg" alt="paper"  class="img1" style="width:15%;height: 25% ;margin-top: -170px"></a></div>
                     </div>
          
-          <div class="img9" style="display: inline" class="content-img"> <a href=href="househould.html">
+          <div class="img9" style="display: inline" class="content-img">
+           <a href="/recycling gallery/househould">
         <img src="images/jpg/Capture11.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
         margin-top: -330px;margin-left: 150px"></a>
         
         </div>
         
-          <div class="img10" style="display: inline" class="content-img"> <a href="food.html">
+          <div class="img10" style="display: inline" class="content-img"> <a href="/recycling gallery/food">
         <img src="images/jpg/Capture6.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
         margin-top: -370px;margin-left: 500px"></a>
         

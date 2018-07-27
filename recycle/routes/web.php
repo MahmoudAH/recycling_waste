@@ -17,6 +17,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/recycling gallery/paper', 'GalleryController@paper');
+Route::get('/recycling gallery/food', 'GalleryController@food');
+
+Route::get('/recycling gallery/electronics', 'GalleryController@electronics');
+
+Route::get('/recycling gallery/steal', 'GalleryController@steal');
+
+Route::get('/recycling gallery/plastic_bages', 'GalleryController@plastic_bages');
+
+Route::get('/recycling gallery/cartons', 'GalleryController@cartons');
+
+Route::get('/recycling gallery/househould', 'GalleryController@househould');
+
+Route::get('/recycling gallery/aluminum', 'GalleryController@aluminum');
+
+Route::get('/recycling gallery/plastic', 'GalleryController@plastic');
+
+
+
+
+
 Route::get('/makeorder', 'HomeController@makeorder');
 Route::post('/makeorder', 'OrderController@store');
 Route::post('/makeorder/{order}', 'OrderController@sendordermail');

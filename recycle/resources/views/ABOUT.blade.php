@@ -25,7 +25,7 @@
        and we can also benefit from this garbage by helping to manufacture it again. Really it will make you look good and you are leaning on
       the couch to get rid of the trash immediately so no Hesitate and ask us immediately dear</p>
       
-    </div>-->
+    </div>
     <div class="team">
       <h1>
         OUR TEAM
@@ -41,7 +41,7 @@
 
     
     </div>
-    
+    -->
     <div class="why" style="display: inline">
       <h1>WHY YOU SHOULD CHOOSE US</h1>
       
