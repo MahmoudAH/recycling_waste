@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html >
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">   
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css"></head>
-<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-<script src="js/html5shiv.min.js"></script>
-<script src="js/respond.min.js"></script>
-<body>
-    
-  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-  <div class="container">
-   
+@extends('layouts.app')
+@section('content')
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    
-    <div class="navbar-header ">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
 
-     <!-- <a class="navbar-brand" href="#">Brand</a>-->
- <a href="home.html">  <img src="images/loogoo.ico" alt="our logo" style="padding-top: 0px"></a>
-       </div>
-
-   
-      <ul class="nav navbar-nav navbar-right" id="mynav" style="margin: 0 90px ; border-right:.1px solid #8FBC8F ; ">
-        <li class="current"><a href="home.html">HOME</a></li>
-        <li><a href="MAKE_ORDER.html">MAKE ORDER</a></li>
-        <li><a href="POINTS.html">POINTS</a></li>
-        <li><a href="ABOUT.html">ABOUT</a></li>
-        <li><a href="CONTACT_US.html" target="_self">CONTACT US</a></li>
-      
-      </ul>
-       
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav>
-  
 <div id="paper">
  <!--
     <h3>How To Recycle</h3>
@@ -64,16 +21,16 @@
        more.....
 </button></a></div>
     <div class="paper2" style="display: inline">
-        <h2>What is it used for?</h2>
+        <h2 style="margin-top: 50px;font-size: 30px">What is it used for?</h2>
         <p>Fluorescent light bulbs and tubes, glues and adhesives, cleaning fluids, oil-based paints, thinners, and stains, lawn and garden chemicals, pool and spa supplies,
         propane/butane tanks, and automobile fluids.</p></br>
-        <h2>Why it wants to be recycled.</h2>
+        <h2 style="font-size: 30px">Why it wants to be recycled.</h2>
         <p>Improper disposal can pollute the environment and pose a threat to human health.
-        <h2>How to recycle it?</h2>
+        <h2 style="font-size: 30px">How to recycle it?</h2>
         <p>Household hazardous waste (HHW) drop-off locations or special collection days.
         Check with your local solid waste agency about special collection events or drop-off centers.
         </p></br>
-        <h2>What does recycled paper become?</h2>
+        <h2 style="font-size: 30px">What does recycled paper become?</h2>
         <p>Certain materials can be cleaned and reused in a similar product, such as cleaning used solvents to make them usable again,
         alternatively, some hazardous waste can be blended and used as a fuel or an ingredient of a fuel, and, some hazardous wastes can be treated and then used as an ingredient in a product, such as fertilizer.
 
@@ -82,6 +39,11 @@
     </div>
 </div>
 
+<script src="js/jquery-3.2.1.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
+@endsection
 
 <!--
 <div class="contactus">

@@ -40,7 +40,7 @@
 <nav class="navbar has-shadow"  style="background-color: #F0E68C ;" >
   <div class="container">
     <div class="navbar-brand">
-     <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="padding-top: 0px;margin-top: -5px"></a>
+     <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="margin-top: 4px"></a>
 
 
                 </a>
@@ -65,51 +65,11 @@
          </div>
       
 
-      <!--  <li class="current" style="color:   #00FFFF; background-color: #C5EFF7; padding: 5px;margin: 15px"><a href="/">HOME</a></li>
-        <li style=" padding: 5px;margin:15px"><a href="/makeorder">MAKE ORDER</a></li>
-        <li style="padding: 5px;margin: 15px"><a href="/points">POINTS</a></li>
-        <li style=" padding: 5px;margin: 15px"><a href="/about">ABOUT</a></li>
-        <li style=" padding: 5px;margin: 15px"><a href="contactus" target="_self">CONTACT US</a></li>
-  
-      <li style=" padding: 5px;margin: 15px"><a href="/admin" target="_self">admin</a></li> 
-          -->
-
-       <!-- end of .navbar-start -->
-
-    <!--
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel"
-        style="background-color: #F0E68C">
-            <div class="container">
-               
- <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="padding-top: 0px;margin-top: -5px"></a>
-
-
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar 
-
-            <ul class="nav navbar-nav navbar-left" id="mynav" style="margin: 0 100px ; padding: 20px  ">
-        <li class="current" style="color:   #00FFFF; background-color: #C5EFF7; padding: 5px;margin: 15px"><a href="/">HOME</a></li>
-        <li style=" padding: 5px;margin:15px"><a href="/makeorder">MAKE ORDER</a></li>
-        <li style="padding: 5px;margin: 15px"><a href="/points">POINTS</a></li>
-        <li style=" padding: 5px;margin: 15px"><a href="/about">ABOUT</a></li>
-        <li style=" padding: 5px;margin: 15px"><a href="contactus" target="_self">CONTACT US</a></li>
-  
-      <li style=" padding: 5px;margin: 15px"><a href="/admin" target="_self">admin</a></li>
- </ul>
-             -->
-          <!--   <ul class="navbar-nav ml-auto nav navbar-right">
-                        Authentication Links -->
-      <div class="navbar-end nav-menu" style="overflow: visible">
+      <div class="navbar-end nav-menu" style="overflow: visible;padding: 100px">
 
                         @guest
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link" style=" padding: 5px;margin: 15px" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="nav-link" style=" padding: 5px;margin: 15px" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @else
                  
 
@@ -157,7 +117,7 @@
             @yield('content')
         </main>
     </div>
-   <!--
+   
      <footer style="margin-top: 500px">
   <div class="minia" style="float: left ;padding: 10px">
         <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ;" >KEEP</span>
@@ -169,7 +129,7 @@
    <div class="mail">
       <p > copy right &copy; All rights reserved</p>
       <!--<p>mah199645@gmail.com</p>
-
+-->
    <div class="follow">
       <h3>follow us:</h3>
         <div class="icon">
@@ -180,7 +140,7 @@
     </div>
   </div>
 </footer>
--->
+
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 

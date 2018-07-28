@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html >
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">   
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" >
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css"></head>
-<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-<script src="js/html5shiv.min.js"></script>
-<script src="js/respond.min.js"></script>
-<body>
-    
-  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-  <div class="container">
-   
+@extends('layouts.app')
+@section('content')
 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    
-    <div class="navbar-header ">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
 
-     <!-- <a class="navbar-brand" href="#">Brand</a>-->
-     <img src="images/logo5.jpg" alt="our logo" style="padding-top: 8%">
-    </div>
-
-   
-      <ul class="nav navbar-nav navbar-right" id="mynav" style="margin: 0 90px ; border-right:.1px solid #8FBC8F ; ">
-        <li class="current"><a href="home.html">HOME</a></li>
-        <li><a href="MAKE_ORDER.html">MAKE ORDER</a></li>
-        <li><a href="POINTS.html">POINTS</a></li>
-        <li><a href="ABOUT.html">ABOUT</a></li>
-        <li><a href="CONTACT_US.html" target="_self">CONTACT US</a></li>
-      
-      </ul>
-       <div class="log">
-                                     
-            <ul   >            
-            <li ><a href="login.html" style="margin: 0 -60px">LOGIN</a></li>
-         <!--  <li><a href="register.html" >REGISTER</a></li>-->
-        </ul>
-
-      </div> 
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-->
-</nav>
-  
-<div id="paper">
+<div id="paper" style="margin-top: -50px">
  <!--
     <h3>How To Recycle</h3>
      <p>The average American generates 4.4 pounds of trash per day, adding to the grand total of about 258 million tons of trash the United States accumulates per year. American communities recycled and composted nearly 35% of municipal solid waste in 2014, diverting 89 million tons to recovery according to
@@ -66,33 +16,33 @@
     <div class="video">
       <iframe style="margin-top: 40px" width="400" height="315" width="560" height="315" src="https://www.youtube.com/embed/V7cdZA72HEA"
             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <h3 style="color: #FF8C00">PAPER RECYCLING </h3>
+          <h3 style="color: #FF8C00;padding: 5px">PAPER RECYCLING </h3>
     </div>
     
    
-    <div id="explore3"> <a href="\grad pro\amplement\project\MAKE_ORDER.html#description"> <button>
+    <div id="explore3"> <a href="\"> <button>
      <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
        more.....
 </button></a></div>
     <div class="paper2" style="display: inline">
-        <h2>What is it used for?</h2>
+        <h2 style="margin-top: 50px;font-size: 30px">What is it used for?</h2>
         <p>Office and printing paper, newspapers and advertising inserts, mail and envelopes,
         magazines and catalogs as well as an array of cereal and other dry food paperboard boxes,
         frozen food packaging, shoe and tissue boxes, paper towel and toilet paper rolls, shredded paper,
         soap and laundry detergent boxes,
         cosmetic and pharmaceutical boxes and paper bags. </br> aluminum foil, and cookware</p></br>
         
-        <h2>Why it wants to be recycled.</h2>
+        <h2 style="font-size: 30px">Why it wants to be recycled.</h2>
         <p>Every ton of paper recovered for recycling saves 3.3 cubic yards of landfill space. In addition, energy and greenhouse gas emissions are reduced. Approximately 75% of the U.S.
         paper mills use some recovered fiber to make everything from paper-based packaging to tissue to office paper and newspaper.
         With nearly three times more paper being recycled than is sent to landfills – based on weight – paper is
         the most recycled material in the municipal solid waste stream.
-        <h2>How to recycle it?</h2>
+        <h2 style="font-size: 30px">How to recycle it?</h2>
         <p>Curbside recycling bin, local recycling drop-off center, workplace or school recycling bin.
         Public space recycling bins usually accept paper products.
 
 </p></br>
-        <h2>What does recycled paper become?</h2>
+        <h2 style="font-size: 30px">What does recycled paper become?</h2>
         <p>With a recycling rate of over 60%, many paper products have recycled content – here are just a few examples: Newspaper recovered for recycling is usually made into more newsprint, and the remainder is used for paperboard, tissue, and construction paperboard. Office paper recovered for recycling becomes raw material for tissue, printing and writing papers and paperboard. Most recycled corrugated boxes are made into new corrugated boxes,
         and the rest is used for paperboard packaging, like cookie and cracker boxes.</p>
   
@@ -100,6 +50,11 @@
 </div>
 
 
+<script src="js/jquery-3.2.1.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script> 
+</body>
+</html>
+@endsection
 <!--
 <div class="contactus">
     <!--
