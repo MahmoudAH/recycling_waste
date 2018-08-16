@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Routing\UrlGenerator;
 class AppServiceProvider extends ServiceProvider
 {
-    /**
+    /**s
      * Bootstrap any application services.
      *
      * @return void
