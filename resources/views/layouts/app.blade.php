@@ -116,7 +116,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
+    
    
      <footer >
   <div class="minia" style="float: left ;padding: 10px">
