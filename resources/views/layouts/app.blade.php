@@ -53,15 +53,15 @@
     </div>
     <div class="navbar-menu" >
       <div class="navbar-start" >
-        <a class="navbar-item is-tab is-active" class="current" href="/" >HOME</a>
+        <a class="navbar-item is-tab is-active" class="current" href="/" style=" padding: 5px;margin: 15px">HOME</a>
+        <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px">MAKE ORDER</a>
+        <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px">POINTS</a>
+        <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px">ABOUT</a>
+        <a class="navbar-item is-tab"  href="contactus" target="_self" style=" padding: 5px;margin: 15px">CONTACT US</a>
         @if (Auth::check())
+        <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px">admin</a>
 @endif
-        <a class="navbar-item is-tab" href="/makeorder">MAKE ORDER</a>
-        <a class="navbar-item is-tab" href="/points">POINTS</a>
-        <a class="navbar-item is-tab"  href="/about">ABOUT</a>
-        <a class="navbar-item is-tab"  href="contactus" target="_self" >CONTACT US</a>
 
-        <a class="navbar-item is-tab" href="/admin" target="_self" >admin</a>
          </div>
       
 
@@ -113,12 +113,12 @@
         </nav>
         
 </div>
-        
+        <main class="py-4">
             @yield('content')
-        
-    
-   
-     <footer class="footer" >
+        </main>
+    </div>
+   <!--
+     <footer >
   <div class="minia" style="float: left ;padding: 10px">
         <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ;" >KEEP</span>
         <span style="font-size: 25px; color: #FF8C00";font-family: 'Rock Salt', cursive;>MINIA</span></br> 
@@ -129,7 +129,7 @@
    <div class="mail">
       <p > copy right &copy; All rights reserved</p>
       <!--<p>mah199645@gmail.com</p>
--->
+--
    <div class="follow">
       <h3>follow us:</h3>
         <div class="icon">
@@ -140,7 +140,7 @@
     </div>
   </div>
 </footer>
-
+-->
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 

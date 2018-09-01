@@ -38,7 +38,6 @@ font-family: 'Roboto', sans-serif;
     padding-top: 40px
 }*/
     
-
 .container h1{
       padding-top: 200px;
 
@@ -49,7 +48,7 @@ font-family: 'Roboto', sans-serif;
 
 }
 .container h1 span{
-    color: 	#DC143C;
+    color:  #DC143C;
     
     
 }
@@ -75,7 +74,7 @@ font-family: 'Roboto', sans-serif;
 .log ul li a{
     text-decoration: none;
     list-style-type:none;
-    /*color: 	#228B22;*/
+    /*color:    #228B22;*/
     position: absolute;
     right: 150px;
     
@@ -103,7 +102,7 @@ font-family: 'Roboto', sans-serif;
     margin: auto
 }
 .navbar.navbar-default.navbar-inverse {
-    background-color: 	#2F4F4F;
+    background-color:   #2F4F4F;
     padding: 10px;
     height: 110px
     
