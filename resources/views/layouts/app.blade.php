@@ -113,12 +113,12 @@
         </nav>
         
 </div>
-        <main class="py-4">
+        
             @yield('content')
-        </main>
+        
     
    
-     <footer >
+     <footer class="footer" >
   <div class="minia" style="float: left ;padding: 10px">
         <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ;" >KEEP</span>
         <span style="font-size: 25px; color: #FF8C00";font-family: 'Rock Salt', cursive;>MINIA</span></br> 

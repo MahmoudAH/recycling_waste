@@ -27,7 +27,7 @@ font-family: 'Roboto', sans-serif;
  padding-left: 100px
     
 }
-/*home style**/
+/*home style
 #welcome{
  background-image: url("../Original images/sunrise.jpg");
   height: 800px;
@@ -36,7 +36,7 @@ font-family: 'Roboto', sans-serif;
 }
 #welcome h p {
     padding-top: 40px
-}
+}*/
     
 
 .container h1{
@@ -126,7 +126,7 @@ footer{
     height: 110px;
     /*padding-top: 200px*/
     
-}
+}/*
 footer .mail{
     padding-top:50px;
     float: left;
@@ -137,7 +137,7 @@ footer .mail{
 footer .mail p{
     font-size: 20px;
      
-}
+}*/
 footer .follow{
    float: right;
   margin: 0 10px;
@@ -665,7 +665,7 @@ padding-top: 50px;
      }
   #about{
     margin: 0 150px;
-    padding-top: 60px;
+    padding-top: 50px;
     margin: 0 200px;
     height:1200px;
     /*background-color: #91B496*/
