@@ -69,8 +69,8 @@
       style="overflow: visible;">
 
                         @guest
-                            <a class="nav-link" style=" padding: 5px;margin: 15px" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            <a class="nav-link" style=" padding: 5px;margin: 15px" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link" style=" padding: 10px;margin-top: 20px; href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="nav-link" style=" padding: 10px;margin-top: 20px; href="{{ route('register') }}">{{ __('Register') }}</a>
                         @else
                  
 
