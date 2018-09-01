@@ -9,9 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app3.js') }}" defer></script>
@@ -19,12 +19,12 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
 
     <!-- Styles -->
@@ -53,15 +53,15 @@
     </div>
     <div class="navbar-menu" >
       <div class="navbar-start" >
-        <a class="navbar-item is-tab is-active" class="current" href="/" style=" padding: 5px;margin: 15px">HOME</a>
-        <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px">MAKE ORDER</a>
-        <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px">POINTS</a>
-        <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px">ABOUT</a>
-        <a class="navbar-item is-tab"  href="contactus" target="_self" style=" padding: 5px;margin: 15px">CONTACT US</a>
+        <a class="navbar-item is-tab is-active" class="current" href="/" >HOME</a>
         @if (Auth::check())
-        <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px">admin</a>
 @endif
+        <a class="navbar-item is-tab" href="/makeorder">MAKE ORDER</a>
+        <a class="navbar-item is-tab" href="/points">POINTS</a>
+        <a class="navbar-item is-tab"  href="/about">ABOUT</a>
+        <a class="navbar-item is-tab"  href="contactus" target="_self" >CONTACT US</a>
 
+        <a class="navbar-item is-tab" href="/admin" target="_self" >admin</a>
          </div>
       
 
@@ -118,7 +118,7 @@
         </main>
     </div>
    
-     <footer style="margin-top: 500px">
+     <footer >
   <div class="minia" style="float: left ;padding: 10px">
         <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ;" >KEEP</span>
         <span style="font-size: 25px; color: #FF8C00";font-family: 'Rock Salt', cursive;>MINIA</span></br> 

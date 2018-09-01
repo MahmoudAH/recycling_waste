@@ -142,14 +142,14 @@ within the hour with .and enjoy a clean environment and clean House we save you 
            <img src="images/jpg/Capture7 (1).jpg" alt="paper"  class="img1" style="width:15%;height: 25% ;margin-top: -170px"></a></div>
                     </div>
          
-          <div class="img9" style="display: inline" class="content-img">
+          <div class="img9" style="display: inline" >
            <a href="/recycling gallery/househould">
         <img src="images/jpg/Capture11.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
         margin-top: -330px;margin-left: 150px"></a>
         
         </div>
         
-          <div class="img10" style="display: inline" class="content-img"> <a href="/recycling gallery/food">
+          <div class="img10" style="display: inline"> <a href="/recycling gallery/food">
         <img src="images/jpg/Capture6.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
         margin-top: -370px;margin-left: 500px"></a>
         

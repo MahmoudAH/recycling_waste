@@ -14,17 +14,6 @@
        and we can also benefit from this garbage by helping to manufacture it again. Really it will make you look good and you are leaning on
       the couch to get rid of the trash immediately so no Hesitate and ask us immediately .</p>
     </div>
-    <!--<div>
-      <h1>ABOUT US</h1>
-      <p>We are students from the Faculty of Computing and information of Minia University we have noticed there is a problem
-      in garbage and trash where it is abound in the streets of Minya which affects the health of the people so we decided to
-      work out a system that solves this problem so that you can enter the steam through your mobileme or your PC and write
-      the amount of garbage that for Dick and write your address in detail and we will get to you immediately and in a way and
-      we will also pay you for the residuals that can be recycled and we will make your home and your environment around you're clean,
-       and we can also benefit from this garbage by helping to manufacture it again. Really it will make you look good and you are leaning on
-      the couch to get rid of the trash immediately so no Hesitate and ask us immediately dear</p>
-      
-    </div>-->
     
     
     <div class="why" style="margin-top: 300px">
@@ -71,28 +60,6 @@
 </section>
 
 </section>
-
-<footer style="margin-top: 600px">
-  <div class="minia" style="float: left ;padding: 10px">
-        <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ">KEEP</span>
-        <span style="font-size: 25px; color: #FF8C00";font-family: 'Rock Salt', cursive;>MINIA</span></br> 
-        <span style="color:#FFD700;font-size: 40px; "> BEAUTIFUL</span></h4>
-  </div>
-   
-    <div class="mail">
-
-      <p> copyright &copy; 2018 All rights reserved</p>
-      <!--<p>mah199645@gmail.com</p>-->
-    </div>
-    <div class="follow">
-      <h3 style="padding: 10px;padding-right: 40px;padding-top: 20px ;font-size: 20px;color: #20948b">follow us:</h3>
-      <div class="icon" style="padding-left:55px">
-       <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-       <a href="https://facebook.com/">  <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-     </div>
-   </div>
-</footer>
 
 <script src="js/jquery-3.2.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script> 

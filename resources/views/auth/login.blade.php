@@ -94,7 +94,7 @@
             </form><!-- /form -->
             <a href="{{ route('password.request') }}" class="forgot-password">
                 Forgot the password?
-                 <a href="{{ route('register') }}">NOt member yet?</a> 
+                 <a href="{{ route('register') }}">Not member yet?</a> 
 
             </a>
         </div><!-- /card-container -->
