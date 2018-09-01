@@ -133,6 +133,7 @@
 </div>
 -->
 </br></br></br>
+<!--
 <footer>
   <div class="minia" style="float: left ;padding: 10px">
         <h4 style="margin: 0 10px;"><span style="color:#FF1493;font-size: 35px;font-family: 'Pacifico', cursive ">KEEP</span>
@@ -143,7 +144,7 @@
     <div class="mail">
 
       <p> copyright &copy; 2018 All rights reserved</p>
-      <!--<p>mah199645@gmail.com</p>-->
+      <!--<p>mah199645@gmail.com</p>-
     </div>
     <div class="follow">
       <h3>follow us:</h3>
@@ -157,9 +158,9 @@
    <!--<div style="margin: 50px 0;">   <h5><ul>        <li><a href="CONTACT_US.html" target="_self">CONTACT US</a></li></ul></h5></div>-->
    <!--   <div >   <h5>TEL:01148557584</h5></div>-->
    <!--   <div>  <h5>mail:mah199645@gmail.com</h5></div>-->
-   <!--  </div>-->
+   <!--  </div>--
 </footer>
-
+-->
 <script src="js/jquery-3.2.1.min.js"></script>  
 <script src="js/bootstrap.min.js"></script> 
 </body>
