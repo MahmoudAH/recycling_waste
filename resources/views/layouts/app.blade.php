@@ -65,7 +65,8 @@
          </div>
       
 
-      <div class="navbar-end nav-menu" style="overflow: visible;padding: 100px">
+      <div class="navbar-end nav-menu" 
+      style="overflow: visible;">
 
                         @guest
                             <a class="nav-link" style=" padding: 5px;margin: 15px" href="{{ route('login') }}">{{ __('Login') }}</a>
