@@ -37,7 +37,7 @@
 <body>
 
   <div id="app">
-<nav class="navbar has-shadow"  style="background-color: #F0E68C ;" >
+<nav class="navbar has-shadow"  style="background-color: #F0E68C ;height: 100px" >
   <div class="container">
     <div class="navbar-brand">
      <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="margin-top: 4px"></a>
