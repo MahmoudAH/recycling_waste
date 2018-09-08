@@ -66,8 +66,7 @@ body, html {
 }
 .container p{
     font-size: 30px;
-    text-align: center;
-   color:#FFFAF0
+    
 }
 
 
@@ -1288,7 +1287,7 @@ color: #FF9800
 }
 
 .side{
-    background-color: #F9BF3B;
+    background-color: #00BCD4;
     float: right;
     width: 250px;
     padding: 15px;
@@ -1345,6 +1344,7 @@ margin-left:20px
 #now section div .inst2{
   width: 50%;
   height: 50px; 
-
-
+}
+.things .h1{
+    font-family:'Courgette', cursive ;
 }

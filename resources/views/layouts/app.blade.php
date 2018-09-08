@@ -65,7 +65,7 @@
         <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px;text-decoration: none;">MAKE ORDER</a>
         <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px;text-decoration: none;">POINTS</a>
         <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px;text-decoration: none;">ABOUT</a>
-        <a class="navbar-item is-tab"  href="contactus" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;">CONTACT US</a>
+        <a class="navbar-item is-tab"  href="/contactus" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;">CONTACT US</a>
         @if (Auth::check())
         <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;">admin</a>
 @endif
@@ -87,21 +87,26 @@
             <div class="navbar-dropdown is-right" >
               <a href="/profile" class="navbar-item">
                 <span class="icon">
-                  <i class="fa fa-fw fa-user-circle-o m-r-5"></i>
-                </span>Profile
+                  <i class="fa fa-fw fa-user-circle-o m-r-5" style="font-size: 15px"></i>
+                </span>
+               <span style="font-size: 20px"> Profile</span>
               </a>
               <a href="#" class="navbar-item">
                 <span class="icon">
-                  <i class="fa fa-fw fa-cog m-r-5"></i>
-                </span>Settings
+                  <i class="fa fa-fw fa-cog m-r-5" style="font-size: 15px"></i>
+                </span>
+                  <span style="font-size: 20px">  Settings
+</span>
               </a>
               <hr class="navbar-divider">
               <a href="{{route('logout')}}" class="navbar-item" onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();">
                 <span class="icon">
-                  <i class="fa fa-fw fa-sign-out m-r-5"></i>
+                  <i class="fa fa-fw fa-sign-out m-r-5" style="font-size: 15px"></i>
                 </span>
-                Logout
+             <span style="font-size: 20px">  Logout
+</span>
+ 
               </a>
               @include('_includes.forms.logout')
             </div>

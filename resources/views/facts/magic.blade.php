@@ -79,13 +79,6 @@ font-style: bold;font-family: 'Courgette', cursive ;"">Fact: If everyone in the 
 </div>  
 </div>
 <!-- Footer -->
-<footer class="page-footer font-small blue" style="background-color: #8C9EFF;margin-bottom: 0;padding-bottom: 0;height: 100px">
-
-  <!-- Copyright -->
-  <p> bvbjvbjn nb jhn</p>
-  <!-- Copyright -->
-
-</footer>
 <!-- Footer -->
 
 
