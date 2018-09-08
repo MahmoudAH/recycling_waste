@@ -140,4 +140,4 @@ return back()->with('message', 'Image Successfully updated!');
 
 }
 
-}
+
