@@ -24,7 +24,7 @@
     
     
     
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2  style="margin-top: 50px;font-size: 30px">What is it used for?</h2>
         <p>Bottles for beverages (e.g., milk, water, juice and soda), foods ( e.g., peanut butter, ketchup, mustard, mayonnaise), household detergents, and toiletries (e.g. shampoo, body wash, mouthwash, lotion, medicine).
         Containers for yogurt, cheese and deli and dairy products. And caps and lids. </br> aluminum foil, and cookware</p></br>

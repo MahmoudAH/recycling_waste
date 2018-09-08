@@ -18,6 +18,10 @@ class GalleryController extends Controller
     {
       return view('food');
     }
+    public function glass()
+    {
+      return view('glass');
+    }
      public function steal()
     {
       return view('steal');

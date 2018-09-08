@@ -15,6 +15,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/app3.js') }}" defer></script>
+    <script src="{{ asset('js/userprofile.js') }}" defer></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -32,12 +34,18 @@
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('css/style2.css') }}" rel="stylesheet">
         <link href="{{ asset('css/exchange.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 <body>
 
   <div id="app">
-<nav class="navbar has-shadow"  style="background-color: #F0E68C ;height: 100px" >
+<nav class="navbar has-shadow"  style="background-color: #00E676 ;height: 100px;margin-bottom: 0;padding-bottom: 0;text-decoration: none;">
   <div class="container">
     <div class="navbar-brand">
      <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="margin-top: 4px"></a>
@@ -53,13 +61,13 @@
     </div>
     <div class="navbar-menu" >
       <div class="navbar-start" >
-        <a class="navbar-item is-tab is-active" class="current" href="/" style=" padding: 5px;margin: 15px">HOME</a>
-        <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px">MAKE ORDER</a>
-        <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px">POINTS</a>
-        <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px">ABOUT</a>
-        <a class="navbar-item is-tab"  href="contactus" target="_self" style=" padding: 5px;margin: 15px">CONTACT US</a>
+        <a class="navbar-item is-tab is-active" class="current" href="/" style=" padding: 5px;margin: 15px;text-decoration: none;">HOME</a>
+        <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px;text-decoration: none;">MAKE ORDER</a>
+        <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px;text-decoration: none;">POINTS</a>
+        <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px;text-decoration: none;">ABOUT</a>
+        <a class="navbar-item is-tab"  href="contactus" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;">CONTACT US</a>
         @if (Auth::check())
-        <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px">admin</a>
+        <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;">admin</a>
 @endif
 
          </div>
@@ -81,12 +89,6 @@
                 <span class="icon">
                   <i class="fa fa-fw fa-user-circle-o m-r-5"></i>
                 </span>Profile
-              </a>
-
-              <a href="#" class="navbar-item">
-                <span class="icon">
-                  <i class="fa fa-fw fa-bell m-r-5"></i>
-                </span>Notifications
               </a>
               <a href="#" class="navbar-item">
                 <span class="icon">
@@ -142,6 +144,25 @@
   </div>
 </footer>
 -->
+
+<script type="text/javascript">
+   function resetForm(registrationForm1)
+   {
+       var myForm = document.getElementById(registrationForm1);
+
+       for (var i = 0; i < myForm.elements.length; i++)
+       {
+           if ('submit' != myForm.elements[i].type && 'reset' != myForm.elements[i].type)
+           {
+               myForm.elements[i].checked = false;
+               myForm.elements[i].value = '';
+               myForm.elements[i].selectedIndex = 0;
+           }
+       }
+   }
+</script>
+
+
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
