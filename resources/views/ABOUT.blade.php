@@ -41,22 +41,21 @@ At Keep Egypte Beautiful, we want to ensure that beauty is our lasting signature
 </div>
 </div>
 
-
-    <div class="row" style="margin-left: 100px;margin-top: 50px">
+ <div class="row" style="margin-top: 100px;margin-left: 0">
       <div class="col-md-10">
-         <h1 style="font-family: 'Courgette', cursive;border-bottom:8px dotted #64B5F6 ;padding: 5px;text-align: left;color: #64B5F6">WHY YOU SHOULD CHOOSE US</h1>     
+         <h1 style="font-family: 'Courgette', cursive;border-bottom:8px dotted #E0E0E0 ;padding: 5px;text-align: left;color: #64B5F6">WHY YOU SHOULD CHOOSE US</h1>     
 
       </div>
     </div>
-    <div class="row" style="margin-left: 100px">
-  <div class="col-md-6">  
+    <div class="row" style="margin-left: 50px">
+  <div class="col-md-6" style="padding: 10px">  
        <i class="fa fa-tag fa-5x" aria-hidden="true" style="color: #64B5F6">  </i>
        <p> <strong>Great Low Prices</strong>
        Competitive<br>  No hidden surcharges of any kind!</p>
 </div>  
     
     
-<div class="col-md-6" >
+<div class="col-md-6" style="padding: 10px">
       
       <i class="fa fa-pencil fa-4x" aria-hidden="true" style="color: #64B5F6"></i>
 
@@ -64,17 +63,17 @@ At Keep Egypte Beautiful, we want to ensure that beauty is our lasting signature
        <br>within the hour with a full quote.</p>
      </div>
 </div>
-  <div  class="row" style="margin-left: 100px">
-      <div class="col-md-6">
+  <div  class="row" style="margin-left: 50px">
+      <div class="col-md-6" style="padding: 10px">
       <i class="fa fa-clock-o fa-4x" aria-hidden="true" style="color: #64B5F6"></i>
 
        <p> <strong>EAST TO FIND SHOP</strong> We're going
-       to build a shop in every small area, so we'll get you quick.
+       to build <br> a shop in every small area, so we'll get you quick.
  <br>
        Service available 7 days a week​.</p>
  </div>      
        
-<div class="col-md-6">
+<div class="col-md-6" style="padding: 10px">
 
          <i class="fa fa-phone fa-4x" aria-hidden="true" style="color: #64B5F6"></i>
        <p> <strong>Telephone Support</strong> We care about our customers
