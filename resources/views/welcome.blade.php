@@ -163,7 +163,7 @@ within the hour with .and enjoy a clean environment and clean House we save you 
         </div>
          
         <div class="img7" style="display: inline"> <a href="/recycling gallery/cartons">
-             <img src="images/jpg/Capture8.jpg" alt="paper"  style="width:30%;height: 27% ;margin-top: -170px"></a></div>
+             <img src="images/jpg/Capture8.jpg" alt="paper"  style="width:30%;height: 25% ;margin-top: -170px"></a></div>
            
            <div class="img8" style="display: inline"> <a href="/recycling gallery/electronics">
            <img src="images/jpg/Capture7 (1).jpg" alt="paper"  class="img1" style="width:15%;height: 25% ;margin-top: -170px"></a></div>
@@ -172,18 +172,18 @@ within the hour with .and enjoy a clean environment and clean House we save you 
           <div class="img9" style="display: inline" >
            <a href="/recycling gallery/househould">
         <img src="images/jpg/Capture11.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
-        margin-top: -165px;margin-left: 230px"></a>
+        margin-top: -265px;margin-left: 230px"></a>
         
         </div>
         
           <div class="img10" style="display: inline"> <a href="/recycling gallery/food">
         <img src="images/jpg/Capture6.jpg" alt="paper" class="img1"  style="width:15%;height: 30% ;
-        margin-top: -205px;margin-left: 660px"></a>
+        margin-top: -305px;margin-left: 660px"></a>
         
         </div>
         <div class="img11" style="display: inline" > <a href="/recycling gallery/food">
         <img src="images/jpg/Capture12.jpg" alt="paper" class="img1"  style="width:15%;height: 30% ;
-        margin-top: -240px;margin-left: 870px"></a>
+        margin-top: -340px;margin-left: 870px"></a>
         
         </div>
                
