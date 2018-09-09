@@ -74,8 +74,9 @@
 <div class="container" style=" margin-top: 50px">
   <div class="row">
     <div class="col-md-10">
+      <section id="v">
       <iframe width="1000" height="515" src="https://www.youtube.com/embed/Zh4F3sZNLqA"
-          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></section>
   
   <h3 style="color: #913D88;font-family: 'Courgette', cursive;">recycling in minutes</h3>
     </div>
@@ -171,18 +172,18 @@ within the hour with .and enjoy a clean environment and clean House we save you 
           <div class="img9" style="display: inline" >
            <a href="/recycling gallery/househould">
         <img src="images/jpg/Capture11.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
-        margin-top: -365px;margin-left: 230px"></a>
+        margin-top: -265px;margin-left: 230px"></a>
         
         </div>
         
           <div class="img10" style="display: inline"> <a href="/recycling gallery/food">
         <img src="images/jpg/Capture6.jpg" alt="paper" class="img1"  style="width:15%;height: 30% ;
-        margin-top: -405px;margin-left: 660px"></a>
+        margin-top: -305px;margin-left: 660px"></a>
         
         </div>
         <div class="img11" style="display: inline" > <a href="/recycling gallery/food">
         <img src="images/jpg/Capture12.jpg" alt="paper" class="img1"  style="width:15%;height: 30% ;
-        margin-top: -440px;margin-left: 870px"></a>
+        margin-top: -340px;margin-left: 870px"></a>
         
         </div>
                
