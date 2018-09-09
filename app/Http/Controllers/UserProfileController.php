@@ -33,9 +33,9 @@ class UserProfileController extends Controller
       $this->validate($request, [
       'name' => 'required|max:255',
       'email' => 'required|email|unique:users,email,'.$id,
-      'city'=> 'required',
-      'phone' => 'required|regex:/(01)[0-9]{9}/|size:11',
-      'password' => 'required|string|min:6|confirmed',
+      'city'=> 'max:20',
+      'phone' => 'regex:/(01)[0-9]{9}/|size:11',
+      'password' => 'string|min:6|confirmed',
 
           ]);
       $user = User::findOrFail($id);
@@ -114,7 +114,7 @@ return back()->with('message', 'Successfully updated!');
     {
 //      dd($request->all()); 
       $this->validate($request, [
-               'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+               'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
  
         if ($request->file('avatar')){
