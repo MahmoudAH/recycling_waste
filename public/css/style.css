@@ -396,7 +396,8 @@ input[type="submit"]{
     height: 100%;
     
 }
-#description .img1 .img2 .img3 .img4.img5.img6.img7.img8.img9.img10 img{
+#description .img1 .img2 .img3 .img4 .img5 
+.img6 .img7 .img8 .img9 .img10 .img11 img{
    
    -webkit-transition: all .5s ease-in-out;
     
@@ -425,7 +426,7 @@ input[type="submit"]{
 }
 }#description .img11:hover img{
     -webkit-transform: scale(1.2) ;
-    
+}
 /*
 #order form{
     width: 600px;
@@ -438,8 +439,10 @@ input[type="submit"]{
 
 */
 
- #description{
+#description{
     height:600px;
+    
+   
 }
 #description h3{
     padding-top: 30px;
