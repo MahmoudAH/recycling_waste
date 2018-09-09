@@ -27,30 +27,30 @@
             </button></a>
    </div>
     </div>
-    <!--
+    
     <div class="item">
      <a href="">  <img src="images/cr4/fw1.jpg" alt="...">
      </a>
       <div class="carousel-caption">
-        ...
+        
       </div>
     </div>
-    ...
+    
 <div class="item">
       <a href=""> <img src="images/cr4/thumb-1920-628278.jpg" alt="...">
       </a> <div class="carousel-caption">
-        ...
+        
       </div>
     </div>
     
     <div class="item">
       <a href=""> <img src="images/cr4/fw8.jpg" alt="...">
       </a><div class="carousel-caption">
-        ...
+        
       </div>
     </div>
     
-    -->
+    
     
   </div>
 

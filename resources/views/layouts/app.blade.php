@@ -73,7 +73,7 @@
 ">CONTACT US</a>
         @if (Auth::check())
         <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">admin</a>
+">ADMIN</a>
 @endif
 
          </div>
