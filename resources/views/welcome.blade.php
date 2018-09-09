@@ -44,7 +44,7 @@
     </div>
     
     <div class="item">
-      <a href=""> <img src="images/cr4/fw8.jpg" alt="...">
+      <a href=""> <img src="images/cr4/bac1.jpg" alt="...">
       </a><div class="carousel-caption">
         
       </div>
@@ -54,7 +54,7 @@
     
   </div>
 
-  <!-- Controls
+  <!-- Controls-->
   <a class="left carousel-control" href="#slide" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -62,7 +62,7 @@
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>  -->
+  </a>  
 </div>
 
 <!--<div class="home">
