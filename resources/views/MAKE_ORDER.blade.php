@@ -40,7 +40,7 @@
     </div>
   </div>
     
- <div class="container" style="margin-left: 0">
+ <div class="container" style="margin-left: 100px">
   <form id="now" method="POST" action="{{url('makeorder'),auth()->user()->id }}" >
                         @csrf   
 
