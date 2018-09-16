@@ -18,7 +18,7 @@
      <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
        more.....
 </button></a></div>
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2 style="margin-top: 50px; font-size: 30px">What is it used for?</h2>
         <p>More than 4.4 million tons of electronic equipment in the U.S. are recycled each year. This includes desktop and laptop computers, monitors, printers, copiers, hard drives, tablets, televisions, cell phones, digital cameras, cords,
         keyboards and ink and toner cartridges. </br> aluminum foil, and cookware</p></br>

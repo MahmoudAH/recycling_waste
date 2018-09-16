@@ -2,6 +2,18 @@ body{
 font-family: 'Roboto', sans-serif;
 }
 
+body, html {
+    background-color: #FFFFE0 !important;
+    
+    /*background-position: 100px 20px;
+    background-size: 100% 70%;*/
+}
+.nav .navbar-menu .navbar-start .test{
+    background-color: #009688;
+    padding: 10px;
+    color: #212121
+}
+
 .meter { -webkit-appearance: none; } //Crucial, this will disable the default styling in Webkit browsers
 
 .meter::-webkit-meter-bar {
@@ -27,7 +39,7 @@ font-family: 'Roboto', sans-serif;
  padding-left: 100px
     
 }
-/*home style**/
+/*home style
 #welcome{
  background-image: url("../Original images/sunrise.jpg");
   height: 800px;
@@ -36,9 +48,8 @@ font-family: 'Roboto', sans-serif;
 }
 #welcome h p {
     padding-top: 40px
-}
+}*/
     
-
 .container h1{
       padding-top: 200px;
 
@@ -49,21 +60,15 @@ font-family: 'Roboto', sans-serif;
 
 }
 .container h1 span{
-    color: 	#DC143C;
+    color:  #DC143C;
     
     
 }
 .container p{
-    font-size: 30px;
-    text-align: center;
-   color:#FFFAF0
-}
-
-.current a{
-    color: #E08283;
-}
-
+    font-size: 20px;
     
+}
+
 
 
 .log ul{
@@ -75,7 +80,7 @@ font-family: 'Roboto', sans-serif;
 .log ul li a{
     text-decoration: none;
     list-style-type:none;
-    /*color: 	#228B22;*/
+    /*color:    #228B22;*/
     position: absolute;
     right: 150px;
     
@@ -103,7 +108,7 @@ font-family: 'Roboto', sans-serif;
     margin: auto
 }
 .navbar.navbar-default.navbar-inverse {
-    background-color: 	#2F4F4F;
+    background-color:   #2F4F4F;
     padding: 10px;
     height: 110px
     
@@ -126,7 +131,7 @@ footer{
     height: 110px;
     /*padding-top: 200px*/
     
-}
+}/*
 footer .mail{
     padding-top:50px;
     float: left;
@@ -137,7 +142,7 @@ footer .mail{
 footer .mail p{
     font-size: 20px;
      
-}
+}*/
 footer .follow{
    float: right;
   margin: 0 10px;
@@ -211,12 +216,14 @@ input[type="submit"]{
 
 /*contact style**/
 .contactus{
-     background-image: url(" https://s3.envato.com/files/141248930/4k133bhd_590.jpg");
+     /*background-image: url(" https://s3.envato.com/files/141248930/4k133bhd_590.jpg");
+     */
      height: 100%;
      margin: -40px 0;
      padding: 20px
      
 }
+
 .contactus form{
     margin:100px 300px;
     background-color: #DCC6E0;
@@ -389,7 +396,8 @@ input[type="submit"]{
     height: 100%;
     
 }
-#description .img1 .img2 .img3 .img4.img5.img6.img7.img8.img9.img10 img{
+#description .img1 .img2 .img3 .img4 .img5 
+.img6 .img7 .img8 .img9 .img10 .img11 img{
    
    -webkit-transition: all .5s ease-in-out;
     
@@ -416,6 +424,9 @@ input[type="submit"]{
 }#description .img10:hover img{
     -webkit-transform: scale(1.2) ;
 }
+}#description .img11:hover img{
+    -webkit-transform: scale(1.2) ;
+}
 /*
 #order form{
     width: 600px;
@@ -428,10 +439,10 @@ input[type="submit"]{
 
 */
 
- #description{
+#description{
     height:600px;
-    margin: 0 200px;
-    padding-top: 60px
+    
+   
 }
 #description h3{
     padding-top: 30px;
@@ -543,7 +554,6 @@ padding-top: 50px;
 
 #now{
     height:500px;
-    margin: 0 200px;
     padding-top: 100px;
     margin-bottom: 0;
     /*background-color: 	#FF8C00*/
@@ -551,7 +561,9 @@ padding-top: 50px;
   }
 #now input{
     width: 300px;
-    border-radius: 5%}
+    border-radius: 5%;
+    height: 45px
+}
 /**/
 /*#now form{*/
 /*    width: 100%;*/
@@ -635,8 +647,10 @@ padding-top: 50px;
   }
 */
   #order_now2 button{
-     background-color: #18FFFF  ;
+ background-color: #FFC107;
      margin: 0 -160px;
+     margin-top: 80px;
+     margin-bottom: 20px;
      padding: 8px;
      position: absolute;
      left: 55%;
@@ -663,11 +677,11 @@ padding-top: 50px;
  #order_now2 button:hover{
         background-color: #FFEB3B;
      }
-  #about{
+ #about{
     margin: 0 150px;
     padding-top: 60px;
-    margin: 0 200px;
-    height:1200px;
+    
+   
     /*background-color: #91B496*/
 }
 
@@ -745,64 +759,64 @@ margin:-160px 500px
     color: #008B8B
 }
 #explore button{
-     background-color:	#F9690E  ;
+     background-color:	#64FFDA  ;
      padding: 8px;
      position: absolute;
      font-size:50px;
    
 }
 #explore1 button{
-      background-color:	#F9690E    ;
+      background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
    
 }#explore2 button{
-       background-color:	#F9690E   ;
+       background-color:	#64FFDA   ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore3 button{
-    background-color:	#F9690E    ;
+    background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore4 button{
-  background-color:	#F9690E    ;
+  background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore5 button{
-   background-color:	#F9690E   ;
+   background-color:	#64FFDA   ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore6 button{
-      background-color:	#F9690E   ;
+      background-color:	#64FFDA   ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore7 button{
-     background-color:	#F9690E    ;
+     background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
 }#explore8 button{
-      background-color:	#F9690E    ;
+      background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
     margin-top: 70px
    
 }#explore9 button{
-      background-color:	#F9690E    ;
+      background-color:	#64FFDA    ;
      padding: 10px;
      position: absolute;
      font-size:50px;
@@ -1250,10 +1264,35 @@ th, td {
     0 1px 0 #afcb9b,
     0 -1px 0 #6b8659;
 }*/
-.side{
-    background-color: #F9BF3B;
+.fact .centered a:hover{
+        background-color:#013243;
+
+}
+#facts li:hover{
+    background-color:#013243;
+
+}
+
+.side1{
+    
     float: right;
-    width: 250px;
+    width: 300px;
+    padding: 15px;
+    margin-top: -600px;
+    margin-right:100px
+}
+.side1  li:hover{
+background-color:#013243;
+color: #FF9800 
+  }
+.side .s1 .s2 h3{
+    border-bottom: 1px solid #013243
+}
+
+.side{
+    background-color: #00BCD4;
+    float: right;
+    width: 300px;
     padding: 15px;
     margin-top: -150px;
     margin-right: -10px
@@ -1264,6 +1303,7 @@ th, td {
 #now section  .label{
   position: absolute;
   padding: 5px;
+
 
 }
 #now .address{
@@ -1308,6 +1348,7 @@ margin-left:20px
 #now section div .inst2{
   width: 50%;
   height: 50px; 
-
-
+}
+.things .h1{
+    font-family:'Courgette', cursive ;
 }

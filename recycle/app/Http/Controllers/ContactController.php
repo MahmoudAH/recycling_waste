@@ -164,7 +164,8 @@ class ContactController extends Controller
     ->send(new newContact($request));
 */
 
-   return redirect('/contactus')->with('success','your message has been recieved!.');
+   return redirect('/contactus')->with('message','your message has been recieved!.we will help you soon');
+/*
 /*
 
 

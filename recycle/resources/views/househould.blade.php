@@ -20,7 +20,7 @@
      <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
        more.....
 </button></a></div>
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2 style="margin-top: 50px;font-size: 30px">What is it used for?</h2>
         <p>Fluorescent light bulbs and tubes, glues and adhesives, cleaning fluids, oil-based paints, thinners, and stains, lawn and garden chemicals, pool and spa supplies,
         propane/butane tanks, and automobile fluids.</p></br>

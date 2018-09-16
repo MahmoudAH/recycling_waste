@@ -19,7 +19,7 @@
 </button></a></div>
     
     
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2>What is it used for?</h2>
         <p>Food cans, aerosol cans</p></br>
         <h2>Why it wants to be recycled.</h2>

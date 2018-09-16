@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/recycling gallery/paper', 'GalleryController@paper');
 Route::get('/recycling gallery/food', 'GalleryController@food');
+Route::get('/recycling gallery/glass', 'GalleryController@glass');
 
 Route::get('/recycling gallery/electronics', 'GalleryController@electronics');
 
@@ -55,7 +56,6 @@ Route::post('/makeorder/{order}', 'OrderController@sendordermail');
 
 
 Route::get('/points', 'HomeController@points');
-Route::get('/exchange', 'PointController@exchange');
 
 
 Route::get('/contactus', 'ContactController@getcontactus');
@@ -63,7 +63,6 @@ Route::post('/contactus', 'ContactController@postcontactus');
 
 Route::get('/about', 'HomeController@about');
 
-Route::get('/profile', 'HomeController@profile');
 Route::get('/admin', 'AdminController@index');
 Route::get('/tables', 'AdminController@showtables');
 Route::get('/manageorders', 'OrderController@manageorders');
@@ -84,14 +83,6 @@ Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 
 
-//Route::get('/', 'AdminOrdersController@index')->name('admin.orders');
-/*
-Route::get('/home', 'HomeController@index')->name('home');
-Route::prefix('admin')->group(function () {
-    Route::get('/', 'AdminOrdersController@index')->name('admin.orders');
-    Route::get('/orders/edit/{order}', 'AdminOrdersController@edit')->name('admin.orders.edit');
-    Route::patch('/orders/{order}', 'AdminOrdersController@update')->name('admin.orders.update');
-});*/
 Route::get('test', function()
 {
 	//Config::set('mail.username', 'mahmoud.elokely@gmail.com');
@@ -99,6 +90,30 @@ Route::get('test', function()
 
     dd(Config::get('mail'));
 });
+
+Route::get('/points/earnfromwaste', 'EarnController@earnfromwaste');
+Route::get('/points/earnfromwaste/junk-mail', 'EarnController@junkmail');
+Route::get('/points/earnfromwaste/sell-and-swap', 'EarnController@sell');
+
+Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
+
+Route::get('/exchange', 'PointController@exchange');
+Route::post('/exchange/checkpoints','PointController@check')->name('exchange.check');
+Route::post('/exchange/checkpoints1','PointController@check1')->name('exchange.check1');
+Route::post('/exchange/checkpoints2','PointController@check2')->name('exchange.check2');
+
+Route::post('/exchange/checkpoints4','PointController@check4')->name('exchange.check4');
+Route::post('/exchange/checkpoints5','PointController@check5')->name('exchange.check5');
+Route::post('/exchange/checkpoints6','PointController@check6')->name('exchange.check6');
+
+Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
+
+Route::put('/profile/{user}/update', 'UserProfileController@update')->name('profile.update');
+Route::put('/profile', 'UserProfileController@update_avatar')->middleware('auth')->name('profile.update_avatar');
+
+Route::get('/profile', 'UserProfileController@profile');
+
+
 /*
     Route::get('/manager', [
         'uses' => 'AppController@getAuthorPage',
@@ -136,3 +151,10 @@ Route::prefix('admin/manage')->group(function () {
 });
 Route::get('/home', 'HomeController@index')->name('home');
 */
+
+Route::get('/informationandfacts', 'FactController@fact');
+Route::get('/informationandfacts/recyclingmagic', 'FactController@magic');
+Route::get('/informationandfacts/reduce-population', 'FactController@population');
+
+Route::get('/informationandfacts', 'FactController@fact');
+

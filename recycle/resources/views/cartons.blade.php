@@ -17,7 +17,7 @@
      <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
        more.....
 </button></a></div>
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2>What is it used for?</h2>
         <p>Cartons are a type of packaging for food and beverage products such as milk, juice, soy milk, soups and broths.
         They are easy to recognize and are available in two types:

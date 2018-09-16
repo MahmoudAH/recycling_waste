@@ -22,7 +22,7 @@
      <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
        more.....
 </button></a></div>
-    <div class="paper2" style="display: inline">
+    <div class="paper2" style="display: inline;margin-bottom: 80px">
         <h2 style="margin-top: 50px;font-size: 30px">What is it used for?</h2>
         <p>Fruit and vegetable peelings, coffee grounds and other food scraps.
         You may also compost small amounts of soiled paper or cardboard.
