@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -6,10 +7,11 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\User;
-class activateEmail extends Mailable
+class ActivateUser extends Mailable
 {
     use Queueable, SerializesModels;
-    public $user;
+
+   public $user;
     /**
      * Create a new message instance.
      *
@@ -25,8 +27,8 @@ class activateEmail extends Mailable
      *
      * @return $this
      */
-/*    public function build()
+    public function build()
     {
-        return $this->markdown('emails.activation');
+        return $this->view('emails.activation');
     }
 }

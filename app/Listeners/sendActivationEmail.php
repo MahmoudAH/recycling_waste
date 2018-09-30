@@ -7,6 +7,9 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Mail;
 use App\Mail\activateEmail;
+//use App\Mail\activateEmail;
+use App\Mail\ActivateUser;
+
 class sendActivationEmail
 {
     /**
@@ -25,15 +28,9 @@ class sendActivationEmail
      * @param  activateAccount  $event
      * @return void
      */
-   /* public function handle(activateAccount $event)
+    public function handle(activateAccount $event)
     {
-      Mail::send('emails.activation', $data, function($message) use ($email) {
-    $message->to($email)->subject($subject);
-});
-     //   dd($event);
-      /*  if($event->user->status){
-            return ;
-        }
-        Mail::to($event->user->email)->send(new activateEmail($event->user));
-    }*/
-}
+    
+    Mail::to($event->user->email)->send(new ActivateUser($event->user));
+
+}}

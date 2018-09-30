@@ -25,8 +25,8 @@ class CreateUsersTable extends Migration
             $table->boolean('status')->default(false);
             $table->integer('role');
             $table->integer('points')->default(0);
-            $table->string('avatar')->default('default.jpg');
-   
+            $table->integer('orders')->default(0);
+            $table->string('avatar');
             $table->rememberToken();
             $table->timestamps();
         });

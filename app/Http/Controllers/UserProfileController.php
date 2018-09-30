@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Hash;
 
 use Illuminate\Http\Request;
 use DB;
@@ -10,16 +11,9 @@ use Illuminate\Support\Facades\Input;
 use Session;
 use Storage;
 use Auth;
-
 class UserProfileController extends Controller
 {
-
-	 public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    public function profile()
+   public function profile()
     {
       $user = Auth::user();
 
@@ -27,13 +21,13 @@ class UserProfileController extends Controller
     }
     public function update(Request $request, $id)
     {
-//    	dd($request->all());
+//      dd($request->all());
 
     
       $this->validate($request, [
-      'name' => 'required|max:255',
-      'email' => 'required|email|unique:users,email,'.$id,
-      'city'=> 'max:20',
+      'name' => 'max:255',
+      'email' => 'email|unique:users,email,'.$id,
+      //'city'=> 'required',
       'phone' => 'regex:/(01)[0-9]{9}/|size:11',
       'password' => 'string|min:6|confirmed',
 
@@ -43,6 +37,12 @@ class UserProfileController extends Controller
       $user->email = $request->email;
        $user->phone = $request->phone;
         $user->city = $request->city;
+
+        if(!empty($request->input('password'))) {
+        $password = Hash::make($request->input('password'));
+        $user->password = $password;
+        $user->save();
+    }
 /*
         if ($request->file('avatar')){
         $avatar = Input::file('avatar');
@@ -53,18 +53,9 @@ class UserProfileController extends Controller
         $user->avatar = $filename;
              $user->save();
  */
-        if ($request->file('avatar')){
-        $avatar = Input::file('avatar');
-        $filename = time() . '.' . $avatar->getClientOriginalName();
-        $path = public_path('images/' . $filename);
-       Image::make($avatar->getRealPath())->resize(100,100)->save($path);
-        $user = Auth::user();
-        $user->avatar = $filename;
-      // $user->update(['avatar'=>"/images/{$filename}"]);
-        $user->save();
-      }
+       $user->save();
+ 
 
-     
 return back()->with('message', 'Successfully updated!');
 
      
@@ -119,12 +110,13 @@ return back()->with('message', 'Successfully updated!');
  
         if ($request->file('avatar')){
         $avatar = Input::file('avatar');
-        $filename = Auth::id().'_'.time() . '.' . $avatar->getClientOriginalName();
+        $filename =time() . '.' . $avatar->getClientOriginalName();
         $path = public_path('images/' . $filename);
        Image::make($avatar->getRealPath())->resize(300,300)->save($path);
         $user = Auth::user();
         $user->avatar = $filename;
-      // $user->update(['avatar'=>"/images/{$filename}"]);
+        //$user->update(['avatar'=>"/images/{$filename}"]);
+
         $user->save();
       }
 
@@ -139,5 +131,3 @@ return back()->with('message', 'Image Successfully updated!');
 
 
 }
-
-

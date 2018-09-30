@@ -43,10 +43,8 @@
  <div class="container" >
   <form id="now" method="POST" action="{{url('makeorder'),auth()->user()->id }}" >
                         @csrf   
-
-   
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-8">
       <h3 style=" border-bottom: 5px dotted #03A9F4;
     font-family: 'Anton', sans-serif;
     font-size: 50px;

@@ -43,9 +43,16 @@
       <div class="text-center">
        
         <form class="form" action="{{route('profile.update_avatar')}}" method="post" id="registrationForm2" enctype="multipart/form-data" >
-{{csrf_field()}}
+          {{csrf_field()}}
           {{method_field('PUT')}}
-           <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar" style="border-radius: 100%">
+        
+         @if(Auth::user()->avatar )
+         <img src="/images/{{ Auth::user()->avatar }}" class="avatar img-circle " alt="avatar" style="border-radius: 100%" >
+ 
+      @else
+      <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar" style="border-radius: 100%" id="img"> 
+       @endif
+
         <h6 style="margin-bottom: 10px">Update photo...</h6>
         <input type="file" class="text-center center-block file-upload" name="avatar" id="avatar">
         <button class="btn btn-lg btn-success text-center center-block" type="submit" style="margin-top: 10px;background-color: #3F51B5"></i> Upload</button>      

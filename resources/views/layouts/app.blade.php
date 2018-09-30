@@ -90,7 +90,11 @@
 
 <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link" style="font-family: 'Bitter', serif;
-">Hey {{Auth::user()->name}}</a>
+">
+@if(Auth::user()->avatar )
+<img src="/images/{{ Auth::user()->avatar }}" class="avatar img-circle" alt="avatar" style="border-radius: 100%" width="20px" style="padding: 10px">
+@endif
+<span style="padding-left: 5px"> Hey {{Auth::user()->name}}</span> </a>
             <div class="navbar-dropdown is-right" >
               <a href="/profile" class="navbar-item" style="text-decoration: none;">
                 <span class="icon">

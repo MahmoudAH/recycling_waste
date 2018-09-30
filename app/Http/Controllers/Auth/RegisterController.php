@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Events\activateAccount;
 //use App\Rules\validPhone;
+use Auth;
 class RegisterController extends Controller
 {
     /*
@@ -81,7 +82,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+   protected function create(array $data)
     {
         return User::create([
             'name' => $data['name'],
@@ -90,14 +91,42 @@ class RegisterController extends Controller
             'city' => $data['city'],
             'phone' => $data['phone'],
             'verifyToken' => Str::random(40),
+              ]);
 /*
             $user
               ->role()
               ->attach(Role::where('name', 'User')->first());
            return $user;
-*/
-        ]);
 
+*/
+           $verifyUser = VerifyUser::create([
+            'user_id' => auth()->user()->id,
+            'token' =>  sha1(time()),
+        ]);
+ 
+       // Mail::to(Auth::user()->email)->send(new activateEmail($user));
+        return $user;
+      //return  $verifyUser;
+
+
+    }
+     public function verifyUser($token)
+    {
+        $user = User::where('verifyToken', $token)->first();
+        if(isset($user) ){
+            //$user = $user->user;
+            if(!$user->verified) {
+                $user->verified = 1;
+                $user->save();
+                $status = "Your e-mail is verified. You can now login.";
+            }else{
+                $status = "Your e-mail is already verified. You can now login.";
+            }
+        }else{
+            return redirect('/login')->with('warning', "Sorry your email cannot be identified.");
+        }
+ 
+        return redirect('/login')->with('status', $status);
     }
 /*
  public function register(Request $request) {
@@ -155,9 +184,12 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user)
     {
         $this->guard()->logout();
-     //event(new activateAccount($user));
+     event(new activateAccount($user));
+      //$user->notify(new ActivateEmail($user));
 
-        return redirect()->route('login')->with('message', 'Registered successfully!.. Please check your email to activate your account.!');
+        //return redirect('/login')
+          // ->with('status','Registered. Please check your email to activate your account.');
+           return redirect()->route('login')->with('message', 'Registered successfully!.. Please check your email to activate your account.!');
    }
 
 }
