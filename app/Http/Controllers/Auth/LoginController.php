@@ -45,7 +45,7 @@ class LoginController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return void
      */
- public function redirectToProvider()
+    public function redirectToProvider()
     {
         return Socialite::driver('google')->redirect();
     }
@@ -58,7 +58,6 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('google')->stateless()->user();
-
        return  $user->token;
     }
     
@@ -75,24 +74,4 @@ class LoginController extends Controller
 
 
 
-   /*
-
-    protected function validateLogin(Request $request)
-    {
-        $this->validate($request, [
-            $this->username() =>[
-            'required','string',
-            Rule::exists('users')->where(function($query){
-              $query->where('status',true);
-
-            })
-
-            ],
-            'password' => 'required|string',
-            ],[
-
-
-            $this->username().'.exists'=>'tne selected email invalid or you must avtivate account'
-        ]);
-    }*/
 }

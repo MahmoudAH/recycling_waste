@@ -128,49 +128,6 @@ class RegisterController extends Controller
  
         return redirect('/login')->with('status', $status);
     }
-/*
- public function register(Request $request) {
-      $input = $request->all();
-      $validator = $this->validator($input);
-
-      if ($validator->passes()){
-        $user = $this->create($input)->toArray();
-        $user['link'] = str_random(30);
-
-        DB::table('verify_users')->insert(['id_user'=>$user['id'],'token'=>$user['link']]);
-
-        //Mail::send('emails.activation', $user, function($message) use ($user){
-          //$message->to($user['email']);
-          //$message->subject('www.hc-kr.com - Activation Code');
-        //});
-       //dd($user);
-      
-      /* Mail::send('emails.activation', $user, function($message) use($user){
-            $message->to($user['email'])->subject('Activation Code');      
-              });
-        return redirect()->to('login')->with('success',"We sent activation code. Please check your mail.");
-      
-          }
-
-      return back()->with('errors',$validator->errors());
-    }
-
-    public function userActivation($token){
-      $check = DB::table('verify_users')->where('token',$token)->first();
-      if(!is_null($check)){
-        $user = User::find($check->id_user);
-        if ($user->status ==1){
-          return redirect()->to('login')->with('success',"user are already actived.");
-
-        }
-        $user->update(['status' => 1]);
-        DB::table('verify_users')->where('token',$token)->delete();
-        return redirect()->to('login')->with('success',"user active successfully.");
-      }
-      return redirect()->to('login')->with('Warning',"your token is invalid");
-    }
-
-
 
 
        /**
@@ -184,12 +141,12 @@ class RegisterController extends Controller
     protected function registered(Request $request, $user)
     {
         $this->guard()->logout();
-     event(new activateAccount($user));
+        event(new activateAccount($user));
       //$user->notify(new ActivateEmail($user));
 
-        //return redirect('/login')
+      //return redirect('/login')
           // ->with('status','Registered. Please check your email to activate your account.');
-           return redirect()->route('login')->with('message', 'Registered successfully!.. Please check your email to activate your account.!');
+        return redirect()->route('login')->with('message', 'Registered successfully!.. Please check your email to activate your account.!');
    }
 
 }
