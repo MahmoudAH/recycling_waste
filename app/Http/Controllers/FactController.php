@@ -6,15 +6,17 @@ use Illuminate\Http\Request;
 
 class FactController extends Controller
 {
-  public function fact()
+   public function fact()
     {
         return view('facts.things');
     }
-      public function magic()
+
+   public function magic()
     {
         return view('facts.magic');
     }
-      public function population()
+
+   public function population()
     {
         return view('facts.population');
     }

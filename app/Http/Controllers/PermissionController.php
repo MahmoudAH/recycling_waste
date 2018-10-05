@@ -9,29 +9,29 @@ use Session;
 class PermissionController extends Controller
 {
    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+   {
+       $this->middleware('auth');
+   }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-      $permissions = Permission::all();
-      return view('admin.manage.permissions.index')->withPermissions($permissions);
-    }
+   public function index()
+   {
+       $permissions = Permission::all();
+       return view('admin.manage.permissions.index')->withPermissions($permissions);
+   }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-      return view('admin.manage.permissions.create');
-    }
+   public function create()
+   {
+       return view('admin.manage.permissions.create');
+   }
 
     /**
      * Store a newly created resource in storage.
@@ -41,12 +41,12 @@ class PermissionController extends Controller
      */
     public function store(Request $request)
     {
-      if ($request->permission_type == 'basic') {
-        $this->validate($request, [
-          'display_name' => 'required|max:255',
-          'name' => 'required|max:255|alphadash|unique:permissions,name',
-          'description' => 'sometimes|max:255'
-        ]);
+        if ($request->permission_type == 'basic') {
+          $this->validate($request, [
+            'display_name' => 'required|max:255',
+            'name' => 'required|max:255|alphadash|unique:permissions,name',
+            'description' => 'sometimes|max:255'
+          ]);
 
         $permission = new Permission();
         $permission->name = $request->name;
@@ -91,8 +91,8 @@ class PermissionController extends Controller
      */
     public function show($id)
     {
-      $permission = Permission::findOrFail($id);
-      return view('admin.manage.permissions.show')->withPermission($permission);
+        $permission = Permission::findOrFail($id);
+        return view('admin.manage.permissions.show')->withPermission($permission);
     }
 
     /**
@@ -103,8 +103,8 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-      $permission = Permission::findOrFail($id);
-      return view('admin.manage.permissions.edit')->withPermission($permission);
+        $permission = Permission::findOrFail($id);
+        return view('admin.manage.permissions.edit')->withPermission($permission);
     }
 
     /**
@@ -116,17 +116,17 @@ class PermissionController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $this->validate($request, [
-        'display_name' => 'required|max:255',
-        'description' => 'sometimes|max:255'
-      ]);
-      $permission = Permission::findOrFail($id);
-      $permission->display_name = $request->display_name;
-      $permission->description = $request->description;
-      $permission->save();
-
-      Session::flash('success', 'Updated the '. $permission->display_name . ' permission.');
-      return redirect()->route('permissions.show', $id);
+        $this->validate($request, [
+          'display_name' => 'required|max:255',
+          'description' => 'sometimes|max:255'
+        ]);
+        $permission = Permission::findOrFail($id);
+        $permission->display_name = $request->display_name;
+        $permission->description = $request->description;
+        $permission->save();
+  
+        Session::flash('success', 'Updated the '. $permission->display_name . ' permission.');
+        return redirect()->route('permissions.show', $id);
     }
 
     /**

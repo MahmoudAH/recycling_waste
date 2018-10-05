@@ -1,57 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@include('partials.head1')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/app3.js') }}" defer></script>
-    <script src="{{ asset('js/userprofile.js') }}" defer></script>
-
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/style2.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/exchange.css') }}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-
-</head>
 <body>
-
-  <div id="app">
+<div id="app">
 <nav class="navbar has-shadow"  style="background-color: #E0F7FA ;height: 100px;margin-bottom: 0;padding-bottom: 0;text-decoration: none;">
   <div class="container">
     <div class="navbar-brand">
      <a class="navbar-brand" href="/">  <img src="../images/cr4/loogoo.jpg" alt="our logo" style="margin-top: 4px"></a>
-
-
                 </a>
        
       <button class="button navbar-burger">
@@ -64,17 +20,17 @@
       <div class="navbar-start" >
         <a class="navbar-item is-tab is-active" class="current" href="/" style=" padding: 5px;margin: 15px;text-decoration: none;">HOME</a>
         <a class="navbar-item is-tab" href="/makeorder" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">MAKE ORDER</a>
+             ">MAKE ORDER</a>
         <a class="navbar-item is-tab" href="/points" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">POINTS</a>
+             ">POINTS</a>
         <a class="navbar-item is-tab"  href="/about" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">ABOUT</a>
+             ">ABOUT</a>
         <a class="navbar-item is-tab"  href="/contactus" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">CONTACT US</a>
+             ">CONTACT US</a>
         @if (Auth::check())
         <a class="navbar-item is-tab" href="/admin" target="_self" style=" padding: 5px;margin: 15px;text-decoration: none;font-family: 'Bitter', serif;
-">ADMIN</a>
-@endif
+            ">ADMIN</a>
+        @endif
 
          </div>
       
@@ -82,19 +38,19 @@
       <div class="navbar-end nav-menu" 
       style="overflow: visible;">
 
-                        @guest
-                            <a class="nav-link" style=" padding: 10px;margin-top: 20px;" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            <a class="nav-link" style=" padding: 10px;margin-top: 20px;" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        @else
-                 
+            @guest
+                <a class="nav-link" style=" padding: 10px;margin-top: 20px;" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" style=" padding: 10px;margin-top: 20px;" href="{{ route('register') }}">{{ __('Register') }}</a>
+            @else
+      
 
-<div class="navbar-item has-dropdown is-hoverable">
+         <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link" style="font-family: 'Bitter', serif;
-">
-@if(Auth::user()->avatar )
-<img src="/images/{{ Auth::user()->avatar }}" class="avatar img-circle" alt="avatar" style="border-radius: 100%" width="20px" style="padding: 10px">
-@endif
-<span style="padding-left: 5px"> Hey {{Auth::user()->name}}</span> </a>
+         ">
+         @if(Auth::user()->avatar )
+         <img src="/images/{{ Auth::user()->avatar }}" class="avatar img-circle" alt         ="avatar" style="border-radius: 100%" width="20px" style="padding: 10px">
+         @endif
+         <span style="padding-left: 5px"> Hey {{Auth::user()->name}}</span> </a>
             <div class="navbar-dropdown is-right" >
               <a href="/profile" class="navbar-item" style="text-decoration: none;">
                 <span class="icon">
@@ -107,7 +63,7 @@
                   <i class="fa fa-fw fa-cog m-r-5" style="font-size: 15px"></i>
                 </span>
                   <span style="font-size: 20px">  Settings
-</span>
+                  </span>
               </a>
               <hr class="navbar-divider">
               <a href="{{route('logout')}}" style="text-decoration: none;" class="navbar-item" onclick="event.preventDefault();
@@ -116,21 +72,16 @@
                   <i class="fa fa-fw fa-sign-out m-r-5" style="font-size: 15px"></i>
                 </span>
              <span style="font-size: 20px">  Logout
-</span>
+             </span>
  
-              </a>
-              @include('_includes.forms.logout')
-            </div>
+                </a>
+                @include('_includes.forms.logout')
+               </div>
+              </div>
+             @endguest
           </div>
-        @endguest
-      </div>
-    
-
-
-
-            </div>
-        </nav>
-        
+        </div>
+    </nav> 
 </div>
         <main class="py-4">
             @yield('content')
@@ -193,10 +144,4 @@
 </body>
 
 </html>
-    <!--
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
-</html>
-
-</body>
-</html>
+    

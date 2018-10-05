@@ -18,10 +18,10 @@ class RoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+   public function index()
     {
-      $roles = Role::all();
-      return view('admin.manage.roles.index')->withRoles($roles);
+        $roles = Role::all();
+        return view('admin.manage.roles.index')->withRoles($roles);
     }
 
     /**
@@ -31,11 +31,11 @@ class RoleController extends Controller
      */
     public function create()
     {
-      $permissions = Permission::all();
-      return view('admin.manage.roles.create')->withPermissions($permissions);
+        $permissions = Permission::all();
+        return view('admin.manage.roles.create')->withPermissions($permissions);
     }
 
-    /**
+    /*  *
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -71,8 +71,8 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-      $role = Role::where('id', $id)->with('permissions')->first();
-      return view('admin.manage.roles.show')->withRole($role);
+        $role = Role::where('id', $id)->with('permissions')->first();
+        return view('admin.manage.roles.show')->withRole($role);
     }
 
     /**
@@ -83,9 +83,9 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-      $role = Role::where('id', $id)->with('permissions')->first();
-      $permissions = Permission::all();
-      return view('admin.manage.roles.edit')->withRole($role)->withPermissions($permissions);
+        $role = Role::where('id', $id)->with('permissions')->first();
+        $permissions = Permission::all();
+        return view('admin.manage.roles.edit')->withRole($role)->withPermissions($permissions);
     }
 
     /**

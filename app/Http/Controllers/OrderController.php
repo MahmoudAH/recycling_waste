@@ -8,7 +8,6 @@ use Session;
 use App\Contact;
 use App\Order;
 use App\USer;
-//use App\Mail\newOrder;
 use App\Notifications\RecievedOrder;
 use Illuminate\Support\Facades\Auth;
 use App\Events\OrderExist;
@@ -50,12 +49,8 @@ class OrderController extends Controller
             'city' => 'required|not_in:0',
             'return' => 'required|not_in:0'
         ]);
-//        $user = Auth::user();
-//'user_id' => auth()->user()->id
-        //            'user_id' => Auth::user()->id ,
 
         $order = Order::create([
-            // $habit->user_id = auth()->user()->id;
             'user_id' => auth()->user()->id,
             'city' => $request->city,
             'return' => $request->return,
@@ -69,60 +64,36 @@ class OrderController extends Controller
             'electronic' => $request->electronic,
             'instructions' => $request->instructions,
         ]);
-            $user = Auth::user()->increment('orders',1);
+        $user = Auth::user()->increment('orders',1);
+        $user = Auth::user();
+        //event(new OrderExist($order));
+        $user->notify(new NewOrder($order,$user));
 
-            $user = Auth::user();
+        if(Input::has('return') == 'point') {
+           $glass=10;
+           $paper=10;
+           $electronic=10;
+           $plastic_bages=10;
+           $plastic_containers=10;
+           $steal=10;
+           $food=10;
+           $kanz_containers=10;
+           $result=0;
 
-      //event(new OrderExist($order));
-  
-
-      $user->notify(new NewOrder($order,$user));
-
-     if(Input::has('return') == 'point') {
-          $glass=10;
-          $paper=10;
-          $electronic=10;
-          $plastic_bages=10;
-          $plastic_containers=10;
-          $steal=10;
-          $food=10;
-          $kanz_containers=10;
-          $result=0;
-
-          if(!empty($request->input('glass')) && !empty($request->input('paper'))) {
-             $result = $glass + $paper;
-            $user = Auth::user()->increment('points', $result);
-
- }
+           if(!empty($request->input('glass')) && !empty($request->input('paper'))) {
+              $result = $glass + $paper;
+              $user = Auth::user()->increment('points', $result);
+           }
          /*elseif(!empty($request->input('paper'))) {
             $result += $paper;
          $user = Auth::user()->increment('points', $result);
- }
-       else{
+           }else{
          $user = Auth::user()->increment('points', 1);
 
        }*/
-}
-    return redirect()->route('user.makeorder.show',$order)->with('message', 'Order received!');
-    //$job=(new SendMail($user,$order));
-      //$this->dispatch($job);
-
-        //return back();
-          
-     
-     //  event(new OrderExist($order));
-
+        }
+       return redirect()->route('user.makeorder.show',$order)->with('message', 'Order received!');
     }
-
-/*   public function sendordermail(Request $request,Order $order)
-   {
-        $order = Order::findOrFail($order);
-
-     \Mail::to('mah199645@gmail.com')
-     ->send(new newOrder($order));
-  }
-*/
-   
    /**
      * Display the specified resource.
      *
@@ -131,22 +102,14 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
- //$user=User::find($id);
-//$user = DB::table('users')->where('id', '=', $id)->increment('points',10);
-     // $user = Auth::user()->increment('points',10);
-
         return view('show', compact('order'));
     }
-
-    
-
 
     public function manageorders(){
             $orders=Order::all();
         return view('admin.manage.manageorders',compact('orders'));
     }
-    //event(new AddPoint($user));
-
+    
     /**
      * Show the form for editing the specified resource.
      *

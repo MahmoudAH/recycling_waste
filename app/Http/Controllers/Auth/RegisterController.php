@@ -61,19 +61,13 @@ class RegisterController extends Controller
             'password' => 'required|string|min:6|confirmed|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/',
 
             'city'=> 'required',
-        'phone' => 'required|regex:/(01)[0-9]{9}/|size:11|unique:users',
+            'phone' => 'required|regex:/(01)[0-9]{9}/|size:11|unique:users',
         //'phone'=> ['required',new validPhone],
         ],
        $messages = [
-    'phone.required' => 'Unsupported phone number. ',
-    'phone.regex' => 'Unsupported phone number. ',
-
-]
-
-
-//$validator = Validator::make($input, $rules, $messages);
-
-        );
+            'phone.required' => 'Unsupported phone number. ',
+            'phone.regex' => 'Unsupported phone number. ',
+          ]);
     }
 
     /**
@@ -92,24 +86,15 @@ class RegisterController extends Controller
             'phone' => $data['phone'],
             'verifyToken' => Str::random(40),
               ]);
-/*
-            $user
-              ->role()
-              ->attach(Role::where('name', 'User')->first());
-           return $user;
 
-*/
            $verifyUser = VerifyUser::create([
             'user_id' => auth()->user()->id,
             'token' =>  sha1(time()),
         ]);
  
-       // Mail::to(Auth::user()->email)->send(new activateEmail($user));
         return $user;
-      //return  $verifyUser;
-
-
     }
+    //verify user 
      public function verifyUser($token)
     {
         $user = User::where('verifyToken', $token)->first();
@@ -143,9 +128,6 @@ class RegisterController extends Controller
         $this->guard()->logout();
         event(new activateAccount($user));
       //$user->notify(new ActivateEmail($user));
-
-      //return redirect('/login')
-          // ->with('status','Registered. Please check your email to activate your account.');
         return redirect()->route('login')->with('message', 'Registered successfully!.. Please check your email to activate your account.!');
    }
 

@@ -61,8 +61,7 @@ class LoginController extends Controller
        return  $user->token;
     }
     
-
-
+    //only authenticated users can login
     public function authenticated(Request $request, $user)
     {
         if (!$user->verified) {
@@ -71,7 +70,4 @@ class LoginController extends Controller
         }
         return redirect()->intended($this->redirectPath());
     }
-
-
-
 }

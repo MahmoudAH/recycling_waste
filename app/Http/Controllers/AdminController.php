@@ -16,13 +16,13 @@ class AdminController extends Controller
     }
     public function index()
     {
-             return view('admin.index');
+        return view('admin.index');
     }
     public function showtables()
     {
-    	      $users = User::orderBy('id', 'desc')->paginate(10);
-              $orders=Order::all();
-              $contacts=Contact::all();
-             return view('admin.tables',compact('users','orders','contacts'));
+    	   $users = User::orderBy('id', 'desc')->paginate(10);
+         $orders=Order::all();
+         $contacts=Contact::all();
+         return view('admin.tables',compact('users','orders','contacts'));
     }
 }

@@ -12,9 +12,8 @@ class Order extends Model
      *
      * @var array
      */
-        protected $fillable = ['return', 'glass', 'paper', 'steal','food','electronic','plastic_containers','kanz_containers','plastic_bages','city','numOfOrders'];
+    protected $fillable = ['return', 'glass', 'paper', 'steal','food','electronic','plastic_containers','kanz_containers','plastic_bages','city','numOfOrders'];
   
-
      /**
      * Get the customer that placed the order.
      */
@@ -24,8 +23,7 @@ class Order extends Model
     } 
     public function materials()
     {
-    return $this->belongsToMany('App\Material', 'material_id');
-
+        return $this->belongsToMany('App\Material', 'material_id');
     }  
       
 }

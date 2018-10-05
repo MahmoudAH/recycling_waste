@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
-
 use App\Role;
 use DB;
-
-
 use Input;
 use Illuminate\Http\Request;
 use App\User;
@@ -22,13 +19,15 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function dashboard(){
+   public function dashboard()
+   {
         return view('admin.index');
-    }
-public function index()
+   }
+   
+   public function index()
     {
-      $users = User::orderBy('id', 'desc')->paginate(10);
-      return view('admin.manage.users.index')->withUsers($users);
+        $users = User::orderBy('id', 'desc')->paginate(10);
+        return view('admin.manage.users.index')->withUsers($users);
     }
 
     /**
@@ -38,8 +37,8 @@ public function index()
      */
    public function create()
     {
-      $roles = Role::all();
-      return view('admin.manage.users.create')->withRoles($roles);
+        $roles = Role::all();
+        return view('admin.manage.users.create')->withRoles($roles);
     }
 
     /**
@@ -47,25 +46,26 @@ public function index()
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-     */    public function store(Request $request)
+     */  
+   public function store(Request $request)
     {
       $this->validate($request, [
         'name' => 'required|max:255',
         'email' => 'required|email|unique:users'
       ]);
 
-      if (!empty($request->password)) {
-        $password = trim($request->password);
-      } else {
-        # set the manual password
-        $length = 10;
-        $keyspace = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
-        $str = '';
-        $max = mb_strlen($keyspace, '8bit') - 1;
-        for ($i = 0; $i < $length; ++$i) {
-            $str .= $keyspace[random_int(0, $max)];
+        if (!empty($request->password)) {
+             $password = trim($request->password);
+        } else {
+          # set the manual password
+             $length = 10;
+             $keyspace = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
+             $str = '';
+             $max = mb_strlen($keyspace, '8bit') - 1;
+             for ($i = 0; $i < $length; ++$i) {
+             $str .= $keyspace[random_int(0, $max)];
         }
-        $password = $str;
+           $password = $str;
       }
 
       $user = new User();
@@ -73,13 +73,11 @@ public function index()
       $user->email = $request->email;
       $user->password = Hash::make($password);
       $user->save();
-
+      
       if ($request->roles) {
         $user->syncRoles(explode(',', $request->roles));
       }
-
       return redirect()->route('users.show', $user->id);
-
       // if () {
       //
       // } else {

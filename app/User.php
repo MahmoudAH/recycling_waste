@@ -11,7 +11,7 @@ use Laratrust\Traits\LaratrustUserTrait;
 class User extends Authenticatable
 {
     use Notifiable;
-     use LaratrustUserTrait;
+    use LaratrustUserTrait;
      //use EntrustUserTrait;
 
     /**
@@ -32,24 +32,24 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
        
-        public function order()
+    public function order()
     {
-          return $this->hasMany('App\Order');
+        return $this->hasMany('App\Order');
 
     }
-        public function contact()
+    public function contact()
     {
-          return $this->hasMany('App\Contact');
+        return $this->hasMany('App\Contact');
 
     }
-     public function routeNotificationForNexmo($notification)
+    public function routeNotificationForNexmo($notification)
     {
         return $this->phone;
     }
     public function verifyUser()
-{
-return $this->hasOne('App\VerifyUser');
-}
+    {
+        return $this->hasOne('App\VerifyUser');
+    }
 
     /*
 * @param string|array $roles
@@ -106,9 +106,9 @@ public function hasRole($role)
         }
         return false;
     }
-public function roles(){
+    public function roles(){
         return $this->belongsToMany('App\Role');
 
-}
+    }
 
 }
