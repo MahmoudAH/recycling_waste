@@ -5,7 +5,7 @@
 <div class="container">
 @include('partials.error')
 <div class="card bg-light">
-<article class="card-body mx-auto" style="max-width: 400px;background-color: #FF80AB;margin-top: 15px;margin-bottom: 15px">
+<article class="card-body mx-auto" style="max-width: 400px;background-color: #CEDEE3;margin-top: 15px;margin-bottom: 15px">
         <p>
         <a href="{{route('login.google')}}" class="btn btn-block btn-google" style="background-color: #fff"> <i class="fa fa-google" aria-hidden="true" ></i>
            Login with google</a>
