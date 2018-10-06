@@ -39,10 +39,16 @@ return [
     'secret' => env('NEXMO_SECRET'),
     'sms_from' => '15556666666',
 ],
-'google' => [
-    'client_id' => env('632110828495-jn5c8et1l9404o1aap96ouujh3t14qhc.apps.googleusercontent.com'),         // Your GitHub Client ID
-    'client_secret' => env('UKcHDYkwDnV1vm_ptZiwhcdI'), // Your GitHub Client Secret
-    'redirect' => 'http://localhost:8000/login/google/callback',
+    'google' => [
+        'client_id' =>env('GOOGLE_CLIENT_ID','994636059290-kfkhl2amru5t12qke806e3d9440uhg4t.apps.googleusercontent.com'),         
+        'client_secret' =>env('GOOGLE_CLIENT_SECRET','xzoTHwA5xqXSgffQiazUc6VV'), 
+        'redirect' => 'http://localhost:8000/login/google/callback',
 ],
-
+      
+    'facebook' => [
+        'client_id' =>'448551102334375',         
+        'client_secret' =>'1e9d807f253cac879fc95518218c0ff8', 
+        'redirect' => 'http://localhost:8000/login/facebook/callback',
+],
+    
 ];

@@ -58,7 +58,7 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('google')->stateless()->user();
-       return  $user->token;
+        return  $user->token;
     }
     
     //only authenticated users can login

@@ -15,11 +15,7 @@
                     @endif
             
                     <order-alert user_id="{{ auth()->user()->id }}"></order-alert>
-
-
-
                     <hr>
-
                     <div class="order-details">
                         <strong style="color: #0074D9
 

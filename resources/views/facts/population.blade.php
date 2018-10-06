@@ -43,7 +43,8 @@ Empty and rinse all containers
  <ul class="list-group" style="background-color: #DCEDC8;
   margin-top: 50px">
             <li class="list-group-item text-muted" style="background-color: #F48FB1">Information and facts
- <i class="fa fa-dashboard fa-1x"></i></li>
+            <i class="fa fa-dashboard fa-1x"></i>
+              </li>
 
             <li class="list-group-item text-right"  ><span class="pull-left"  ><strong><a href="/informationandfacts" style="text-decoration: none;">some things you did not know you can recycle</a> </strong></span>
              </li>
@@ -53,16 +54,11 @@ Empty and rinse all containers
                 {{ csrf_field() }}
             </form>
         </li>
-          </ul> 
-  </section>
+   </ul> 
+ </section>
 </div>
 </div>  
 </div>
-
-
-
-
-
 
 <script src="js/jquery-3.2.1.min.js"></script>  
 <script src="js/bootstrap.min.js"></script> 

@@ -6,7 +6,15 @@
 @include('partials.error')
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;background-color: #FF80AB;margin-top: 15px;margin-bottom: 15px">
-    <h4 class="card-title mt-3 text-center" style="color: #3949AB;font-size: 20px">Create Account</h4>
+        <p>
+        <a href="{{route('login.google')}}" class="btn btn-block btn-google" style="background-color: #fff"> <i class="fa fa-google" aria-hidden="true" ></i>
+           Login with google</a>
+        <a href="{{route('login.facebook')}}" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        </p>
+        <p class="divider-text">
+           <span class="bg-light">OR</span>
+        </p>
+        <h4 class="card-title mt-3 text-center" style="color: #3949AB;font-size: 20px">Create Account</h4>
    
   <form method="POST" action="{{ route('register') }}">
                         @csrf

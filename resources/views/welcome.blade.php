@@ -170,7 +170,7 @@ within the hour with .and enjoy a clean environment and clean House we save you 
                     </div>
          
           
-          <div class="img9" style="display: inline" >
+          <div class="issmg9" style="display: inline" >
            <a href="/recycling gallery/househould">
         <img src="images/jpg/Capture11.jpg" alt="paper" class="img1"  style="width:35%;height: 30% ;
         margin-top: -365px;margin-left: 230px"></a>

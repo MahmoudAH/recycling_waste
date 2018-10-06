@@ -163,12 +163,8 @@ return [
         Zizaco\Entrust\EntrustServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
 
-Intervention\Image\ImageServiceProvider::class,
-    Laravel\Socialite\SocialiteServiceProvider::class,
-
-
-
-
+        Intervention\Image\ImageServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -222,10 +218,6 @@ Intervention\Image\ImageServiceProvider::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
     'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-
-
-
-
     ],
 
 ];

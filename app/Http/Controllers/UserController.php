@@ -161,6 +161,22 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::findOrFail($id);
+        $user->delete();
+        return back()->with('message', 'Successfully deleted!');
+    }
+    public function restore($id)
+    {
+        $user=User::onlyTrashed()->findOrFail($id);
+        $user->restore();
+        return back()->with('message', 'Successfully restored!');
+
+    }
+    public function deleteforever($id)
+    {
+        $user=User::onlyTrashed()->findOrFail($id);
+        $user->forceDelete();
+        return back()->with('message', 'Successfully deleted for ever!');
+
     }
 }

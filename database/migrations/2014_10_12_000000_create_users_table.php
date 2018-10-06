@@ -23,10 +23,11 @@ class CreateUsersTable extends Migration
             $table->string('city');
             $table->string('verifyToken');
             $table->boolean('status')->default(false);
-            $table->integer('role');
+            $table->string('role');
             $table->integer('points')->default(0);
             $table->integer('orders')->default(0);
             $table->string('avatar');
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
         });
