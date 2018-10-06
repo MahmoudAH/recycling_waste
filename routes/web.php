@@ -63,8 +63,7 @@ Route::resource('/permissions', 'PermissionController', ['except' => 'destroy'])
 Route::resource('/roles', 'RoleController', ['except' => 'destroy']);
 
 //login with google
-Route::get('login/google', 'Auth\LoginController@redirectToProvider')->name('
-	login.google');
+Route::get('login/google', 'Auth\LoginController@redirectToProvider')->name('login.google');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 
 /*login with facebook*/
