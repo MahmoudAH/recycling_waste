@@ -60,7 +60,7 @@ class LoginController extends Controller
         $user = Socialite::driver('google')->stateless()->user();
         return  $user->token;
     }
-    
+    /*
     //only authenticated users can login
     public function authenticated(Request $request, $user)
     {
@@ -69,5 +69,5 @@ class LoginController extends Controller
             return back()->with('warning', 'You need to confirm your account. We have sent you an activation code, please check your email.');
         }
         return redirect()->intended($this->redirectPath());
-    }
+    }*/
 }
