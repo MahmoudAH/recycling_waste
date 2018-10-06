@@ -58,6 +58,8 @@ Route::get('/admin', 'AdminController@index');
 Route::get('/tables', 'AdminController@showtables');
 Route::get('/manageorders', 'OrderController@manageorders');
 Route::resource('/manageusers', 'UserController');
+Route::post('/manageusers/restore/{id}', 'UserController@restore')->name('manageusers.restore');
+Route::post('/manageusers/delete-forever/{id}', 'UserController@deleteforever')->name('manageusers.deleteforever');
 Route::get('/dashboard', 'ManageController@dashboard');
 Route::resource('/permissions', 'PermissionController', ['except' => 'destroy']);
 Route::resource('/roles', 'RoleController', ['except' => 'destroy']);
