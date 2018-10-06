@@ -33,7 +33,7 @@ Route::post('/makeorder', 'OrderController@store');
 Route::post('/makeorder/{order}', 'OrderController@sendordermail');
 Route::get('/makeorder/{order}', 'OrderController@show')->name('user.makeorder.show');
 
-//points page route
+//points page routes
 Route::get('/points', 'HomeController@points');
 Route::get('/points/earnfromwaste', 'EarnController@earnfromwaste');
 Route::get('/points/earnfromwaste/junk-mail', 'EarnController@junkmail');
@@ -63,11 +63,11 @@ Route::resource('/permissions', 'PermissionController', ['except' => 'destroy'])
 Route::resource('/roles', 'RoleController', ['except' => 'destroy']);
 
 //login with google
-Route::get('login/google', 'Auth\LoginController@redirectToProvider');
+Route::get('login/google', 'Auth\LoginController@redirectToProvider')->name('
+	login.google');;
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
-/*
-login with facebook
-*/
+
+/*login with facebook*/
 Route::get('login/facebook', 'Auth\FacebookController@redirectToProvider')->name('login.facebook');
 Route::get('login/facebook/callback', 'Auth\FacebookController@handleProviderCallback');
 
@@ -76,7 +76,6 @@ Route::get('test', function()
 {
     dd(Config::get('mail'));
 });
-
 //activate user route
 //Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
