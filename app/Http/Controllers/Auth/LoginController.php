@@ -7,6 +7,9 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 use Socialite;
+use App\User;
+use Auth;
+use Exception;
 class LoginController extends Controller
 {
     /*
@@ -57,9 +60,33 @@ class LoginController extends Controller
      */
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('google')->stateless()->user();
-        return  $user->token;
+        $googleUser = Socialite::driver('google')->stateless()->user();
+        $existUser = User::where('email',$googleUser->email)
+           ->first();
+        try
+        {
+            if($existUser){
+                Auth::loginUsingId($existUser->id);
+            }else{
+                $user = new User();
+                $user->name = $googleUser->name;
+                $user->email = $googleUser->email;
+                $user->password = md5(rand(1,10000));
+                
+                $user->save();
+                Auth::loginUsingId($googleUser->id);
+            }
+            return redirect()->to('/');
+
+        }    
+        catch(Exception $e){
+            return 'error';
+        }    
+
+
     }
+     
+    
     /*
     //only authenticated users can login
     public function authenticated(Request $request, $user)

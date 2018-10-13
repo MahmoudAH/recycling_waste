@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Socialite;
+use App\User;
+use Auth;
+use Exception;
 class FacebookController extends Controller
 {
     
