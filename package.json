@@ -26,6 +26,7 @@
     "dependencies": {
         "cross-env": "^5.2.0",
         "font-awesome": "^4.7.0",
+        "laravel-vue-pagination": "^2.1.0",
         "metismenu": "^2.7.8"
     }
 }
