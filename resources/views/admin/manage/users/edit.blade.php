@@ -73,10 +73,8 @@
           </b-checkbox-group>
         </div>
       </div>
-
-
-          <button class="button is-primary">Edit User</button>
-        </form>
+            <input type="submit" class="button is-primary" name="" value="Edit User">
+         </form>
       </div>
     </div>
 
