@@ -2,7 +2,7 @@
 
   @section('content')
 
-<div class="container bootstrap snippet" style="margin-top:50px">
+<div class="container bootstrap snippet" style="margin-top:50px;margin-bottom: 80px">
 @if (Session::has('success'))
   
   <div class="alert alert-success" role="alert">

@@ -1352,3 +1352,60 @@ margin-left:20px
 .things .h1{
     font-family:'Courgette', cursive ;
 }
+footer .social a 
+{
+    padding: 10px;
+    background-color: #fff;
+    margin:5px;
+    font-size: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fff;
+
+}
+footer .social .fa-twitter{
+    background-color:#55ACEE;
+}
+footer .social .fa-facebook-official{
+    background-color:#3B5998;
+}
+footer .social .fa-instagram{
+    background-color:#125688;
+}
+footer .social a:hover
+{
+    background-color:#E91E63;
+    opacity: 1.5;
+
+}  
+footer .social .col3
+{
+    color: #fff;
+    font-size: 20px;
+}  
+footer .contactwith{
+    margin-top: 8px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer .contactwith i{
+    font-size: 20px;
+    padding: 3px
+}
+footer .contactwith a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-family: 'Courgette', cursive ; 
+
+}
+footer .contactwith span:hover , a:hover{
+   /* border:1px solid #fff;
+    background-color: #E91E63;
+    transform: scale(1.5);*/
+    padding: 5px;
+
+}
+footer .text, .social{
+    margin-top: 8px;
+}

@@ -8,6 +8,38 @@
 /* FONT PATH
  * -------------------------- */
 
+.navbar-start a{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Bitter', serif;
+    margin-top: 20px
+}
+.navbar-nav a:hover{
+    background-color: #20366b;
+    color: #032030
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:  #0080ff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 90px;
+}
+
+#myBtn:hover {
+  background-color: #4d004d
+;
+}
+
 @font-face {
   font-family: 'FontAwesome';
   src: url(/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713);

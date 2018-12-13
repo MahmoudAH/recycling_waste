@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div id="slide" class="carousel slide" data-ride="carousel" style=" margin-top: -60px" >
+<div id="slide" class="carousel slide" data-ride="carousel" style=" margin-top: -30px" >
   <!-- Indicators -->
   
 
@@ -10,8 +10,8 @@
     
     <div class="item active">
       
-      <a href="\grad pro\amplement\project\MAKE_ORDER.html#description"> <img src="images/cr4/fw.jpg" alt="..." style="height: 600px">
-      </a> <div class="carousel-caption">
+       <img src="images/cr4/fw.jpg" alt="..." style="height: 600px">
+       <div class="carousel-caption">
 
 
         
@@ -29,23 +29,24 @@
     </div>
     
     <div class="item">
-     <a href="">  <img src="images/cr4/fw1.jpg" alt="..." style="height: 600px">
-     </a>
+       <img src="images/cr4/fw1.jpg" alt="..." style="height: 600px">
+    
+       <div class="carousel-caption">
+          
+      </div>
+    </div>
+    
+<div class="item">
+       <img src="images/cr4/thumb-1920-628278.jpg" alt="..." style="height: 600px">
       <div class="carousel-caption">
         
       </div>
     </div>
     
-<div class="item">
-      <a href=""> <img src="images/cr4/thumb-1920-628278.jpg" alt="..." style="height: 600px">
-      </a> <div class="carousel-caption">
-        
-      </div>
-    </div>
-    
     <div class="item">
-      <a href=""> <img src="images/cr4/bac1.jpg" alt="..." style="height: 600px">
-      </a><div class="carousel-caption">
+       <img src="images/cr4/bac1.jpg" alt="..." style="height: 600px">
+     
+     <div class="carousel-caption">
         
       </div>
     </div>
