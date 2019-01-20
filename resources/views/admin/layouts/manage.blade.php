@@ -2,22 +2,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="refresh" content="0;url=pages/index.html">
-    <title>Startmin</title>
-    <script language="javascript">
-        window.location.href = "pages/index.html"
-    </script>
-</head>
-<body>
-<a href="pages/index.html">Go to Demo</a>
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -78,6 +62,9 @@
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #000000;height: 50px">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html" style="font-size: 25px;padding: 5px">Admin</a>
+                </div>
+                <div class="navbar-header">
+                    <a  href="{{route('/')}}" style="font-size: 25px;padding: 5px">Home</a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

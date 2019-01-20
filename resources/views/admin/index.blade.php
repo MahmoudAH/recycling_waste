@@ -1,10 +1,5 @@
-
-
-
 @extends('layouts.manage')
-
 @section('content')
-
             <div id="page-wrapper">
                 <div class="flex-container">
     <div class="columns m-t-10">
