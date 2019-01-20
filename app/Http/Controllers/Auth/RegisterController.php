@@ -58,11 +58,13 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
 
-            'password' => 'required|string|min:6|confirmed|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/',
+            'password' => 'required|string|min:6|confirmed',
 
             'city'=> 'required',
             'phone' => 'required|regex:/(01)[0-9]{9}/|size:11|unique:users',
         //'phone'=> ['required',new validPhone],
+        // 'password' => 'required|string|min:6|confirmed|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/',
+
         ],
        $messages = [
             'phone.required' => 'Unsupported phone number. ',
