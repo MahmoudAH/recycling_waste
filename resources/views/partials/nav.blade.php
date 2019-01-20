@@ -42,19 +42,19 @@
          @if(Auth::user()->avatar )
          <img src="/images/{{ Auth::user()->avatar }}" class="avatar img-circle" alt         ="avatar" style="border-radius: 100%" width="20px" style="padding: 10px">
          @endif
-         <span style="padding-left: 5px"> Hey {{Auth::user()->name}}</span> </a>
+         <span style="padding-left: 5px;font-family: 'Bitter', serif;color: #eae3e3"> Hey {{Auth::user()->name}}</span> </a>
             <div class="navbar-dropdown is-right" >
               <a href="/profile" class="navbar-item" style="text-decoration: none;">
                 <span class="icon">
                   <i class="fa fa-fw fa-user-circle-o m-r-5" style="font-size: 15px"></i>
                 </span>
-               <span style="font-size: 20px"> Profile</span>
+               <span style="font-size: 15px"> Profile</span>
               </a>
               <a href="#" class="navbar-item" style="text-decoration: none;">
                 <span class="icon">
                   <i class="fa fa-fw fa-cog m-r-5" style="font-size: 15px"></i>
                 </span>
-                  <span style="font-size: 20px">  Settings
+                  <span style="font-size: 15px">  Settings
                   </span>
               </a>
               <hr class="navbar-divider">
@@ -63,7 +63,7 @@
                 <span class="icon">
                   <i class="fa fa-fw fa-sign-out m-r-5" style="font-size: 15px"></i>
                 </span>
-             <span style="font-size: 20px">  Logout
+             <span style="font-size: 15px">  Logout
              </span>
  
                 </a>
