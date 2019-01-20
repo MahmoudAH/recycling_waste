@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-   @include('partials.mainhead')        
+   @include('partials.head1')        
 <body>
    @include('partials.nav')        
    <main class="py-4">
