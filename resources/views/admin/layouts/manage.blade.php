@@ -61,8 +61,8 @@
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #000000;height: 50px">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html" style="font-size: 25px;padding: 5px">Admin</a>
-                    <a  href="{{route('/')}}" style="font-size: 25px;padding: 5px">Home</a>
+                    <a class="navbar-brand" href="index.html" style="font-size: 25px;padding: 10px">Admin</a>
+                    <a class="navbar-brand" href="{{route('/')}}" style="font-size: 25px;padding: 5px">Home</a>
                 </div>
                 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
